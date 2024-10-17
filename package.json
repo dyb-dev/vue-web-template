@@ -1,0 +1,85 @@
+{
+    "name": "web-mobile-template",
+    "version": "0.0.1",
+    "description": "基于`vue3全家桶`搭建的Web移动端模板",
+    "author": "dyb-dev",
+    "license": "MIT",
+    "type": "module",
+    "private": true,
+    "main": "./src/main.ts",
+    "scripts": {
+        "dev": "vite",
+        "build": "npm run ts-check & npm run build-only",
+        "build-only": "vite build",
+        "preview": "vite preview",
+        "ts-check": "vue-tsc --build --force"
+    },
+    "engines": {
+        "node": ">=18.0.0",
+        "pnpm": ">=8.15.5"
+    },
+    "browserslist": [
+        "> 0.5%",
+        "last 2 versions",
+        "Firefox ESR",
+        "not dead",
+        "not op_mini all",
+        "not IE 11"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dyb-dev/web-mobile-template"
+    },
+    "homepage": "https://github.com/dyb-dev/web-mobile-template",
+    "bugs": {
+        "url": "https://github.com/dyb-dev/web-mobile-template/issues",
+        "directory": "https://github.com/dyb-dev/web-mobile-template"
+    },
+    "devDependencies": {
+        "@dyb-dev/eslint-config": "^0.1.0",
+        "@dyb-dev/prettier-config": "^0.0.5",
+        "@dyb-dev/stylelint-config": "^0.0.3",
+        "@dyb-dev/ts-config": "^0.0.7",
+        "@mistjs/vite-plugin-px2viewport": "^0.0.11",
+        "@vitejs/plugin-legacy": "^5.4.1",
+        "@vitejs/plugin-vue": "^5.0.5",
+        "autoprefixer": "^10.4.20",
+        "eslint": "^8.57.0",
+        "portfinder-sync": "^0.0.2",
+        "postcss-mobile-forever": "^4.1.6",
+        "prettier": "^3.3.3",
+        "prettier-eslint": "^16.3.0",
+        "rollup": "^4.18.1",
+        "rollup-plugin-copy": "^3.5.0",
+        "sass": "^1.77.7",
+        "stylelint": "^16.6.1",
+        "terser": "^5.31.3",
+        "typescript": "^5.5.3",
+        "unplugin-vue-router": "^0.10.8",
+        "vite": "^5.3.3",
+        "vite-plugin-html": "^3.2.2",
+        "vite-plugin-mkcert": "^1.17.5",
+        "vite-plugin-pwa": "^0.19.8",
+        "vue-tsc": "^2.0.26",
+        "workbox-cacheable-response": "^7.1.0",
+        "workbox-core": "^7.1.0",
+        "workbox-precaching": "^7.1.0",
+        "workbox-routing": "^7.1.0",
+        "workbox-strategies": "^7.1.0",
+        "workbox-window": "^7.1.0"
+    },
+    "dependencies": {
+        "@dyb-dev/vant-pro": "^0.0.3",
+        "@vueuse/core": "^10.11.0",
+        "axios": "^1.7.2",
+        "dayjs": "^1.11.11",
+        "pinia": "^2.1.7",
+        "pinia-plugin-persistedstate": "^4.0.1",
+        "query-string": "^9.1.0",
+        "radash": "^12.1.0",
+        "vant": "^4.9.3",
+        "vconsole": "^3.15.1",
+        "vue": "^3.4.31",
+        "vue-router": "^4.4.0"
+    }
+}

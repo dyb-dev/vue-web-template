@@ -1,0 +1,92 @@
+# 设置 GitHub Actions 工作流名称
+name: Deploy Web site to Pages
+
+on:
+  # 监听推送 `main` 分支
+  push:
+    branches: [main]
+
+  # 允许你从储存库的 Actions 选项卡手动运行此工作流程
+  workflow_dispatch:
+
+# 设置工作流权限，以允许部署到 GitHub Pages
+permissions:
+  # 赋予工作流读取仓库内容的权限
+  contents: read
+  # 赋予工作流写入 GitHub Pages 的权限
+  pages: write
+  # 赋予工作流生成和使用 OpenID Connect (OIDC) ID 令牌的权限
+  id-token: write
+
+# 设置同一工作流并发
+concurrency:
+  # 为工作流定义一个组名，当组中的工作流正在运行时，会等待上一个工作流结束再执行
+  group: pages
+  # 不允许取消正在进行中的工作流
+  cancel-in-progress: false
+
+# 设置工作流的具体工作集合
+jobs:
+  # 构建工作（自定义命名）
+  build:
+    # 设置工作名称，方便在 GitHub Actions 界面上识别这一步骤（自定义命名）
+    name: Build
+    # 设置 `build` 工作在 GitHub 提供的最新版本的 Ubuntu Linux 操作系统中运行
+    runs-on: ubuntu-latest
+    # 设置 `build` 工作的具体步骤
+    steps:
+      # 步骤名（自定义命名）
+      - name: Checkout
+        # 指定使用 GitHub 官方提供的一个 Action来执行某个任务，`@v4` 表示使用的版本
+        uses: actions/checkout@v4
+        with:
+          # 指定要拉取的提交历史的深度，0 表示拉取完整的提交历史，如果未启用 lastUpdated，则不需要
+          fetch-depth: 0
+
+      # 如果不使用 pnpm 可以删除该步骤
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8.15.5
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18.16.0
+          # 或 npm / yarn / bun
+          cache: pnpm
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Install dependencies
+        # 或 npm install / yarn install / bun install
+        run: pnpm install
+
+      - name: Build component library
+        # 或 npm run build / yarn build / bun run build
+        run: pnpm build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # 指定要上传的目录
+          path: dist
+
+  # 部署工作
+  deploy:
+    name: Deploy
+    # 依赖于 build 工作，即 build 工作完成后再执行 deploy 工作
+    needs: build
+    # 设置部署时的环境信息
+    environment:
+      # 环境的名称（自定义命名）
+      name: github-pages
+      # 部署完成后生成的 URL 地址
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        # 用于是指当前步骤的唯一标识符，用于在同一个工作流中引用和使用该步骤的输出或者状态
+        id: deployment
+        uses: actions/deploy-pages@v4

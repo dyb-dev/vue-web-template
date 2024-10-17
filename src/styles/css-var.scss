@@ -1,0 +1,135 @@
+/*
+ * @Author: dyb-dev
+ * @Date: 2024-04-29 20:37:35
+ * @LastEditors: dyb-dev
+ * @LastEditTime: 2024-10-15 20:46:36
+ * @FilePath: /web-mobile-template/src/styles/css-var.scss
+ * @Description: css变量模块
+ */
+
+/** CODE: 项目基础css变量 */
+:root {
+    /** 颜色调色板 */
+    --color-black: #000;
+    --color-white: #fff;
+    --color-gray-1: #f7f8fa;
+    --color-gray-2: #f2f3f5;
+    --color-gray-3: #ebedf0;
+    --color-gray-4: #dcdee0;
+    --color-gray-5: #c8c9cc;
+    --color-gray-6: #969799;
+    --color-gray-7: #646566;
+    --color-gray-8: #323233;
+    --color-red: #ee0a24;
+    --color-blue: #1989fa;
+    --color-orange: #ff976a;
+    --color-green: #07c160;
+
+    /** 渐变色 */
+    --color-gradient-red: linear-gradient(to right, #ff6034, #ee0a24);
+    --color-gradient-orange: linear-gradient(to right, #ffd01e, #ff8917);
+    --color-gradient-blue: linear-gradient(to right, #64b5f6, #1989fa);
+    --color-gradient-green: linear-gradient(to right, #66bb6a, #07c160);
+
+    /** 基础字体族 */
+    --base-font: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Segoe UI, Arial, Roboto, "PingFang SC", "miui",
+        "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+    /** 价格字体族 */
+    --price-font: Avenir-Heavy, PingFang SC, Helvetica Neue, Arial, sans-serif;
+
+    /* IOS 顶部和底部 安全区域 支持IOS 11.2 及以上的系统版本 */
+    --safe-area-top-height: env(safe-area-inset-top);
+    --safe-area-bottom-height: env(safe-area-inset-bottom);
+
+    /** 状态颜色 */
+    --primary-color: var(--color-blue);
+    --success-color: var(--color-green);
+    --danger-color: var(--color-red);
+    --warning-color: var(--color-orange);
+
+    /** 文本颜色 */
+    --text-color: var(--color-gray-8);
+    --text-color-2: var(--color-gray-6);
+    --text-color-3: var(--color-gray-5);
+
+    /** 激活状态颜色 */
+    --active-color: var(--color-gray-2);
+
+    /** 背景颜色 */
+    --background: var(--color-gray-1);
+    --background-2: var(--color-white);
+    --background-3: var(--color-white);
+
+    /** 边框颜色 */
+    --border-color: var(--color-gray-3);
+}
+
+/** CODE: 暗黑主题下文档根元素css变量 */
+.theme-dark {
+    /** 文本颜色 */
+    --text-color: #f5f5f5;
+    --text-color-2: #707070;
+    --text-color-3: #4d4d4d;
+
+    /** 激活状态颜色 */
+    --active-color: #3a3a3c;
+
+    /** 背景颜色 */
+    --background: #000;
+    --background-2: #1c1c1e;
+    --background-3: #37363b;
+
+    /** 边框颜色 */
+    --border-color: #3a3a3c;
+}
+
+/** CODE: 提高css优先级 覆盖 vant 的基础css变量 */
+/* stylelint-disable-next-line no-duplicate-selectors */
+:root:root {
+    /** vant 颜色调色板 */
+    --van-black: var(--color-black);
+    --van-white: var(--color-white);
+    --van-gray-1: var(--color-gray-1);
+    --van-gray-2: var(--color-gray-2);
+    --van-gray-3: var(--color-gray-3);
+    --van-gray-4: var(--color-gray-4);
+    --van-gray-5: var(--color-gray-5);
+    --van-gray-6: var(--color-gray-6);
+    --van-gray-7: var(--color-gray-7);
+    --van-gray-8: var(--color-gray-8);
+    --van-red: var(--color-red);
+    --van-blue: var(--color-blue);
+    --van-orange: var(--color-orange);
+    --van-green: var(--color-green);
+
+    /** vant 渐变色 */
+    --van-gradient-red: var(--color-gradient-red);
+    --van-gradient-orange: var(--color-gradient-orange);
+
+    /** vant 基础字体族 */
+    --van-base-font: var(--base-font);
+    /** vant 价格字体族 */
+    --van-price-font: var(--price-font);
+
+    /** vant 状态颜色 */
+    --van-primary-color: var(--primary-color);
+    --van-success-color: var(--success-color);
+    --van-danger-color: var(--danger-color);
+    --van-warning-color: var(--warning-color);
+
+    /** vant 文本颜色 */
+    --van-text-color: var(--text-color);
+    --van-text-color-2: var(--text-color-2);
+    --van-text-color-3: var(--text-color-3);
+
+    /** vant 激活状态颜色 */
+    --van-active-color: var(--active-color);
+
+    /** vant 背景颜色 */
+    --van-background: var(--background);
+    --van-background-2: var(--background-2);
+    --van-background-3: var(--background-3);
+
+    /** vant 边框颜色 */
+    --van-border-color: var(--border-color);
+}

@@ -1,0 +1,32 @@
+/*
+ * @Author: dyb-dev
+ * @Date: 2024-04-29 20:40:40
+ * @LastEditors: dyb-dev
+ * @LastEditTime: 2024-10-13 23:34:21
+ * @FilePath: /web-mobile-template/src/styles/base.scss
+ * @Description: 基础样式模块
+ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    color: var(--text-color);
+    font-size: 16px;
+    font-family: var(--base-font);
+    line-height: 1.6;
+    background-color: var(--background);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+    position: relative;
+}

@@ -15,7 +15,7 @@ logs
 
 # 忽略项目文件
 .history
-dev*
+/dev*
 dist
 dist-ssr
 node_modules

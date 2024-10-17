@@ -47,10 +47,16 @@ pnpm install
 pnpm dev
 ```
 
-### 构建文档
+### 构建产物
 
 ```bash
 pnpm build
+```
+
+### 预览产物
+
+```bash
+pnpm preview
 ```
 
 ## 许可证

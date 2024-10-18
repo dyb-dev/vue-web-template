@@ -1,0 +1,17 @@
+# 支持全球市场份额超过 0.5% 的浏览器
+> 0.5%
+
+# 支持每个浏览器的最近两个版本
+last 2 versions
+
+# 支持 Firefox 的长期支持版本（ESR）
+Firefox ESR
+
+# 排除不再维护的浏览器（如 IE 10 等）
+not dead
+
+# 不支持 Opera Mini
+not op_mini all
+
+# 不支持 IE 11
+not IE 11

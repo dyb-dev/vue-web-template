@@ -1,6 +1,6 @@
 {
     "name": "web-mobile-template",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "基于`vue3全家桶`搭建的Web移动端模板",
     "author": "dyb-dev",
     "license": "MIT",
@@ -18,14 +18,6 @@
         "node": ">=18.0.0",
         "pnpm": ">=8.15.5"
     },
-    "browserslist": [
-        "> 0.5%",
-        "last 2 versions",
-        "Firefox ESR",
-        "not dead",
-        "not op_mini all",
-        "not IE 11"
-    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/dyb-dev/web-mobile-template"

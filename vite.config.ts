@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2023-11-08 15:55:25
  * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-22 13:27:25
+ * @LastEditTime: 2024-10-22 14:50:21
  * @FilePath: /web-mobile-template/vite.config.ts
  * @Description: vite配置文件
  */
@@ -33,6 +33,7 @@ const projectRootDir = process.cwd()
 const isDevMode = process.env.NODE_ENV === "development"
 
 export default defineConfig(({ mode }: ConfigEnv) => {
+
     /** STATIC: 获取.env文件的环境变量 */
     const _env = <ImportMetaEnv>loadEnv(mode, projectRootDir)
 
@@ -203,4 +204,5 @@ export default defineConfig(({ mode }: ConfigEnv) => {
     }
 
     return mergeConfig(_baseEnvConfig, _currentEnvConfig)
+
 })

@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2023-11-08 15:55:25
  * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-17 14:19:03
+ * @LastEditTime: 2024-10-22 13:27:25
  * @FilePath: /web-mobile-template/vite.config.ts
  * @Description: vite配置文件
  */
@@ -33,7 +33,6 @@ const projectRootDir = process.cwd()
 const isDevMode = process.env.NODE_ENV === "development"
 
 export default defineConfig(({ mode }: ConfigEnv) => {
-
     /** STATIC: 获取.env文件的环境变量 */
     const _env = <ImportMetaEnv>loadEnv(mode, projectRootDir)
 
@@ -136,6 +135,8 @@ export default defineConfig(({ mode }: ConfigEnv) => {
             // 指定传递给 CSS 预处理器的选项
             preprocessorOptions: {
                 scss: {
+                    // 使用最新的 js API编译
+                    api: "modern-compiler",
                     additionalData: `
                         @use "${projectRootDir}/src/styles/scss-var.scss" as *;
                         @use "${projectRootDir}/src/styles/mixins/index.scss" as *;
@@ -202,5 +203,4 @@ export default defineConfig(({ mode }: ConfigEnv) => {
     }
 
     return mergeConfig(_baseEnvConfig, _currentEnvConfig)
-
 })

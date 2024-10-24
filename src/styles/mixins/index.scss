@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2024-03-22 11:00:33
  * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-14 23:01:47
+ * @LastEditTime: 2024-10-24 11:21:17
  * @FilePath: /web-mobile-template/src/styles/mixins/index.scss
  * @Description: scss混合样式模块
  */
@@ -14,7 +14,7 @@
     开启滚动
     $direction - 滚动方向 "x" | "y"
  */
-@mixin open-scroll-mixin($direction) {
+@mixin open-scroll-mixin($direction: "y") {
     @if $direction == "x" {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;

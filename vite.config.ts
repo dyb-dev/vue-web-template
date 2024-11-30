@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2023-11-08 15:55:25
  * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-22 14:50:21
+ * @LastEditTime: 2024-11-30 17:06:27
  * @FilePath: /web-mobile-template/vite.config.ts
  * @Description: vite配置文件
  */
@@ -41,8 +41,8 @@ export default defineConfig(({ mode }: ConfigEnv) => {
     const __PROJECT_INFO__ = generateProjectInfo(_env)
 
     // STATIC: 获取基础视口宽度函数
-    const _getViewportWidth = (file: string) =>
-        file.includes("node_modules/vant") || file.includes("node_modules/@dyb-dev/vant-pro") ? 375 : 750
+    const _getViewportWidth = (file?: string) =>
+        file?.includes("node_modules/vant") || file?.includes("node_modules/@dyb-dev/vant-pro") ? 375 : 750
 
     /** STATIC: 视口单位精度，精确到小数点后几位 */
     const _vwUnitPrecision = 3

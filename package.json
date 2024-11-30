@@ -1,6 +1,6 @@
 {
     "name": "web-mobile-template",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "基于`vue3全家桶`搭建的Web移动端模板",
     "author": "dyb-dev",
     "license": "MIT",
@@ -49,7 +49,7 @@
         "sass": "^1.80.3",
         "stylelint": "^16.10.0",
         "terser": "^5.36.0",
-        "typescript": "^5.6.3",
+        "typescript": "~5.6.3",
         "unplugin-vue-router": "^0.10.8",
         "vite": "^5.4.9",
         "vite-plugin-html": "^3.2.2",

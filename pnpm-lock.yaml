@@ -52,8 +52,8 @@ importers:
         specifier: ^0.0.5
         version: 0.0.5(prettier@3.4.1)
       '@dyb-dev/project-cli':
-        specifier: ^0.0.4
-        version: 0.0.4
+        specifier: ^0.0.8
+        version: 0.0.8
       '@dyb-dev/stylelint-config':
         specifier: ^0.0.3
         version: 0.0.3(stylelint@16.11.0(typescript@5.6.3))
@@ -692,8 +692,8 @@ packages:
     peerDependencies:
       prettier: ^3.3.2
 
-  '@dyb-dev/project-cli@0.0.4':
-    resolution: {integrity: sha512-sPizzuA5fnru05GAEVywmxkqJqIpLnWcdRHcbo9Mnr1wIBfft2oANCK9vOtKzKe8MQnVeNSaJxAGae41R/1mbA==}
+  '@dyb-dev/project-cli@0.0.8':
+    resolution: {integrity: sha512-ii52Os3pqpZnRrrMhdOjjE0njpU8AhKkbAEo6xDDtFS5wIXZNuaqUzan1He41AWG+EdOBIssGe2WMxP3P7Aj5g==}
     engines: {node: '>=18.0.0', pnpm: '>=8.15.5'}
     hasBin: true
 
@@ -5541,7 +5541,7 @@ snapshots:
     dependencies:
       prettier: 3.4.1
 
-  '@dyb-dev/project-cli@0.0.4': {}
+  '@dyb-dev/project-cli@0.0.8': {}
 
   '@dyb-dev/stylelint-config@0.0.3(stylelint@16.11.0(typescript@5.6.3))':
     dependencies:

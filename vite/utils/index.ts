@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2024-01-28 19:52:10
  * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-17 18:05:08
+ * @LastEditTime: 2025-02-11 17:22:25
  * @FilePath: /web-mobile-template/vite/utils/index.ts
  * @Description: vite配置相关工具函数
  */
@@ -346,7 +346,7 @@ const assetFileNames = (
 const THIRD_PARTY_MODULE_SPLIT_CONFIG = {
     "vue-vendor": ["vue", "vue-router", "pinia", "pinia-plugin-persistedstate", "@vueuse/core"],
     "vant-vendor": ["vant", "@dyb-dev/vant-pro"],
-    "utils-vendor": ["axios", "dayjs", "query-string", "radash"],
+    "utils-vendor": ["axios", "dayjs", "query-string"],
     "vconsole-vendor": ["vconsole"]
 }
 

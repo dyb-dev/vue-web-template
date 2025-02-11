@@ -1,6 +1,6 @@
 {
     "name": "web-mobile-template",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "基于`vue3全家桶`搭建的Web移动端模板",
     "author": "dyb-dev",
     "license": "MIT",
@@ -72,7 +72,6 @@
         "pinia": "^2.2.4",
         "pinia-plugin-persistedstate": "^4.1.1",
         "query-string": "^9.1.1",
-        "radash": "^12.1.0",
         "vant": "^4.9.8",
         "vconsole": "^3.15.1",
         "vue": "^3.5.12",

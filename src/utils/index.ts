@@ -2,15 +2,15 @@
  * @Author: dyb-dev
  * @Date: 2024-02-27 16:07:20
  * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-16 22:12:27
+ * @LastEditTime: 2025-02-19 15:55:16
  * @FilePath: /web-mobile-template/src/utils/index.ts
  * @Description: 工具函数模块
  */
 
 /** 导出计算相关工具函数 */
 export * from "./calculate"
-/** 导出日期相关工具函数 */
-export * from "./date"
+/** 导出日期时间相关工具函数 */
+export * from "./dateTime"
 /** 导出设备相关工具函数 */
 export * from "./device"
 /** 导出环境相关工具函数 */

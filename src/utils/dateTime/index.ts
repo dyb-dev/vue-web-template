@@ -2,12 +2,22 @@
  * @Author: dyb-dev
  * @Date: 2024-06-01 14:36:15
  * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-15 23:02:26
- * @FilePath: /web-mobile-template/src/utils/date/index.ts
- * @Description: 日期相关工具函数
+ * @LastEditTime: 2025-02-19 15:56:56
+ * @FilePath: /web-mobile-template/src/utils/dateTime/index.ts
+ * @Description: 日期时间相关工具函数
  */
 
 import dayjs from "dayjs"
+
+/**
+ * FUN: 延迟函数
+ *
+ * @author dyb-dev
+ * @date 19/02/2025/  15:55:58
+ * @param {number} ms - 延迟时间（毫秒）
+ * @returns {*}  {Promise<void>} - 返回一个 Promise 对象
+ */
+const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms))
 
 /** 时间段对象，包含开始时间和结束时间 */
 interface ITimeInterval {
@@ -256,4 +266,4 @@ const generateTimeIntervals = (timeMapping: ITimeMapping, slotDurationMinutes: n
 
 }
 
-export { getUnscheduledTimeInDateRange, resolveOverlappingIntervals, generateTimeIntervals }
+export { delay, getUnscheduledTimeInDateRange, resolveOverlappingIntervals, generateTimeIntervals }

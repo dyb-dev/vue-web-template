@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2023-11-08 15:55:25
  * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-17 19:54:54
+ * @LastEditTime: 2025-02-20 18:18:01
  * @FilePath: /web-mobile-template/src/views/home.vue
  * @Description: 首页
 -->
@@ -10,16 +10,15 @@
 <script setup lang="ts">
 import { useTitle } from "@vueuse/core"
 import { Button, Icon } from "vant"
-import { useRoute } from "vue-router"
 
 import Cube from "@/components/Cube.vue"
 import { router } from "@/router"
+import { getCurrentUrlQuery } from "@/utils"
 
 /** HOOKS: 设置页面 Title */
 useTitle("首页")
 
-const { query } = useRoute()
-console.log("首页入参", query)
+console.log("首页入参", getCurrentUrlQuery())
 
 function onClickJumpButton() {
 

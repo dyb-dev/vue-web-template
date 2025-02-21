@@ -2,20 +2,20 @@
  * @Author: dyb-dev
  * @Date: 2024-10-16 22:13:43
  * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-16 22:41:55
+ * @LastEditTime: 2025-02-21 21:04:49
  * @FilePath: /web-mobile-template/src/constants/userInfo.ts
  * @Description: 用户信息常量模块
  */
 
 import { ECertificatesType, EGenderType } from "@/types"
 
-/** STATIC: 性别配置列表 */
+/** CONST: 性别配置列表 */
 const GENDER_CONFIG_LIST = [
     { type: EGenderType.Man, desc: "男" },
     { type: EGenderType.Woman, desc: "女" }
 ]
 
-/** STATIC: 证件配置列表 */
+/** CONST: 证件配置列表 */
 const CERTIFICATE_CONFIG_LIST = [
     { type: ECertificatesType.IdCard, desc: "身份证" },
     { type: ECertificatesType.MilitaryCard, desc: "军人证" },

@@ -9,12 +9,21 @@
 
 <script setup lang="ts">
 import { Empty, Button } from "vant"
+
+import { router } from "@/router"
+
+/** EVENT: 点击按钮前往首页 */
+const goToHome = () => {
+
+    router.push({ path: __PROJECT_INFO__.env.VITE_HOME_ROUTE, replace: true })
+
+}
 </script>
 
 <template>
     <section class="not-found-page">
         <Empty description="抱歉，您访问的页面不存在">
-            <Button round type="primary" to="/" class="not-found-page__back-button">返回首页</Button>
+            <Button class="not-found-page__back-button" type="primary" round @click="goToHome">前往首页</Button>
         </Empty>
     </section>
 </template>

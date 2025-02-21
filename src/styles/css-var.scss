@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2024-04-29 20:37:35
  * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-15 20:46:36
+ * @LastEditTime: 2025-02-20 11:58:34
  * @FilePath: /web-mobile-template/src/styles/css-var.scss
  * @Description: css变量模块
  */
@@ -22,14 +22,17 @@
     --color-gray-8: #323233;
     --color-red: #ee0a24;
     --color-blue: #1989fa;
-    --color-orange: #ff976a;
+    --color-orange: #ff6430;
     --color-green: #07c160;
+    --color-yellow: #ff976a;
+    --color-wathet: #e7f1ff;
 
     /** 渐变色 */
     --color-gradient-red: linear-gradient(to right, #ff6034, #ee0a24);
-    --color-gradient-orange: linear-gradient(to right, #ffd01e, #ff8917);
     --color-gradient-blue: linear-gradient(to right, #64b5f6, #1989fa);
+    --color-gradient-orange: linear-gradient(to right, #ff8f5a, #ff6430);
     --color-gradient-green: linear-gradient(to right, #66bb6a, #07c160);
+    --color-gradient-yellow: linear-gradient(to right, #ffd01e, #ff8917);
 
     /** 基础字体族 */
     --base-font: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Segoe UI, Arial, Roboto, "PingFang SC", "miui",

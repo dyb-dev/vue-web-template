@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2024-10-13 21:32:31
  * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-15 10:25:37
+ * @LastEditTime: 2025-02-20 13:34:21
  * @FilePath: /web-mobile-template/src/stores/theme.ts
  * @Description: 主题状态管理
  */
@@ -24,7 +24,10 @@ interface IThemeStoreState {
 }
 
 /** 是否初始化主题 */
-let _isInitTheme = false
+let _isSetupTheme = false
+
+/** 深色主题类名 */
+const THEME_DARK_CLASS_NAME = "theme-dark"
 
 /** Store 实例 */
 const useThemeStore = defineStore("ThemeStore", () => {
@@ -46,13 +49,9 @@ const useThemeStore = defineStore("ThemeStore", () => {
         themeStoreState.theme = isMatchesDark ? ETheme.Dark : ETheme.Light
 
         // 文档根元素的类列表
-        const _documentElementClassList = document.documentElement.classList
-        // 文档根元素的类名
-        const _documentElementClassName = "theme-dark"
+        const _classList = document.documentElement.classList
 
-        isMatchesDark
-            ? _documentElementClassList.add(_documentElementClassName)
-            : _documentElementClassList.remove(_documentElementClassName)
+        isMatchesDark ? _classList.add(THEME_DARK_CLASS_NAME) : _classList.remove(THEME_DARK_CLASS_NAME)
 
     }
 
@@ -62,15 +61,15 @@ const useThemeStore = defineStore("ThemeStore", () => {
      * @author dyb-dev
      * @date 13/10/2024/  21:57:10
      */
-    const _initTheme = () => {
+    const _setupTheme = () => {
 
-        if (_isInitTheme) {
+        if (_isSetupTheme) {
 
             return
 
         }
 
-        _isInitTheme = true
+        _isSetupTheme = true
 
         /** 是否使用暗黑主题 */
         if (__PROJECT_INFO__.env.VITE_DARK !== "true") {
@@ -94,7 +93,7 @@ const useThemeStore = defineStore("ThemeStore", () => {
 
     }
 
-    _initTheme()
+    _setupTheme()
 
     return { themeStoreState }
 

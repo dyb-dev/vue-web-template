@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2024-08-02 22:22:33
  * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-10 23:28:53
+ * @LastEditTime: 2025-02-12 00:28:39
  * @FilePath: /web-mobile-template/tsconfig.app.json
  * @Description: app环境ts配置
  */
@@ -15,7 +15,7 @@
         // 指定要包含的库
         "lib": ["ESNext", "DOM", "DOM.Iterable", "WebWorker"],
         // 指定要包含的类型定义文件
-        "types": ["vite-plugin-pwa/client", "unplugin-vue-router/client", "@dyb-dev/ts-config/types"],
+        "types": ["vite/client", "vite-plugin-pwa/client", "unplugin-vue-router/client", "@dyb-dev/ts-config/types"],
         // 指定用于存储 TypeScript 编译器在增量编译模式下生成的编译信息的文件路径，以便下次编译时可以使用
         "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
         // 设置基础路径，解决模块导入路径问题

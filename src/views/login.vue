@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2023-11-08 20:03:27
  * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-17 12:29:20
+ * @LastEditTime: 2025-02-21 20:05:40
  * @FilePath: /web-mobile-template/src/views/login.vue
  * @Description: 登录页面
 -->
@@ -22,8 +22,8 @@ import type { RouteNamedMap } from "vue-router/auto-routes"
 /** HOOKS: 设置页面 Title */
 useTitle("登录")
 
-/** 页面查询入参 */
-interface IPageQuery {
+/** 查询参数 */
+interface ISearchParams {
     /** 重定向路由 默认: 首页路由 */
     redirectRoute?: keyof RouteNamedMap
     /** 其他相关参数 */
@@ -62,12 +62,22 @@ const onClickLoginButton = async() => {
     showLoadingToast({ message: "正在登录...", mask: true, duration: 0 })
 
     // 登录
-    const _loginApiResult = await login({
-        phoneNumber: phoneNumber.value,
-        password: password.value
-    })
-
-    console.log("onClickLoginButton() _loginApiResult:", _loginApiResult)
+    const _loginApiResult = await login(
+        {
+            phoneNumber: phoneNumber.value,
+            password: password.value
+        },
+        {
+            testResult: {
+                success: true,
+                message: "登录成功",
+                data: {
+                    nickName: "123456",
+                    phoneNumber: "13800138000"
+                }
+            }
+        }
+    )
 
     closeToast()
 
@@ -75,7 +85,7 @@ const onClickLoginButton = async() => {
     if (!_loginApiResult.success) {
 
         showDialog({
-            title: "登录失败",
+            title: "温馨提示",
             message: _loginApiResult.message || "登录失败, 请稍后重试"
         })
 
@@ -83,9 +93,9 @@ const onClickLoginButton = async() => {
 
     }
 
-    const { redirectRoute = __PROJECT_INFO__.env.VITE_HOME_ROUTE, ...otherQuery } = query as IPageQuery
+    const { redirectRoute = __PROJECT_INFO__.env.VITE_HOME_ROUTE, ...otherParams } = query as ISearchParams
 
-    router.replace({ path: redirectRoute, query: otherQuery })
+    router.replace({ path: redirectRoute, query: otherParams })
 
 }
 

@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2023-11-08 15:55:25
  * @LastEditors: dyb-dev
- * @LastEditTime: 2024-11-30 17:06:27
+ * @LastEditTime: 2025-02-21 20:51:06
  * @FilePath: /web-mobile-template/vite.config.ts
  * @Description: vite配置文件
  */
@@ -26,36 +26,36 @@ import { setupProdConfig } from "./vite/vite.prod.config"
 import type { ISetupEnvConfigParam } from "./vite/types"
 import type { ConfigEnv, UserConfig } from "vite"
 
-/** STATIC: 项目根目录 */
+/** CONST: 项目根目录 */
 const projectRootDir = process.cwd()
 
-/** STATIC: 是否开发模式 */
+/** CONST: 是否开发模式 */
 const isDevMode = process.env.NODE_ENV === "development"
 
 export default defineConfig(({ mode }: ConfigEnv) => {
 
-    /** STATIC: 获取.env文件的环境变量 */
+    /** CONST: 获取.env文件的环境变量 */
     const _env = <ImportMetaEnv>loadEnv(mode, projectRootDir)
 
-    /** STATIC: 项目信息 */
+    /** CONST: 项目信息 */
     const __PROJECT_INFO__ = generateProjectInfo(_env)
 
-    // STATIC: 获取基础视口宽度函数
+    // CONST: 获取基础视口宽度函数
     const _getViewportWidth = (file?: string) =>
         file?.includes("node_modules/vant") || file?.includes("node_modules/@dyb-dev/vant-pro") ? 375 : 750
 
-    /** STATIC: 视口单位精度，精确到小数点后几位 */
+    /** CONST: 视口单位精度，精确到小数点后几位 */
     const _vwUnitPrecision = 3
 
     const { VITE_PORT, VITE_BASE_PATH, VITE_PROTOCOL, VITE_PWA, VITE_HTML_MINIFY } = _env
 
-    /** STATIC: 端口号 */
+    /** CONST: 端口号 */
     const _port = getPort(~~VITE_PORT)
 
-    /** STATIC: 浏览器打开地址 */
+    /** CONST: 浏览器打开地址 */
     const _browserOpenUrl = `${VITE_PROTOCOL}://${getAvailableIPv4HostIP()}:${_port}`
 
-    /** STATIC: 设置环境配置参数 */
+    /** CONST: 设置环境配置参数 */
     const _setupEnvConfigParam: ISetupEnvConfigParam = {
         projectRootDir,
         port: _port,
@@ -63,15 +63,15 @@ export default defineConfig(({ mode }: ConfigEnv) => {
         env: _env
     }
 
-    /** STATIC: 开发环境配置 */
+    /** CONST: 开发环境配置 */
     const _devEnvConfig = setupDevConfig(_setupEnvConfigParam)
 
-    /** STATIC: 当前环境配置 */
+    /** CONST: 当前环境配置 */
     const _currentEnvConfig: UserConfig = isDevMode
         ? _devEnvConfig
         : { ..._devEnvConfig, ...setupProdConfig(_setupEnvConfigParam) }
 
-    /** STATIC: 基础环境配置 */
+    /** CONST: 基础环境配置 */
     const _baseEnvConfig: UserConfig = {
         // 项目根目录，默认： process.cwd()
         root: projectRootDir,

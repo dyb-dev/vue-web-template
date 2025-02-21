@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2024-10-14 00:04:44
  * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-17 19:42:09
+ * @LastEditTime: 2025-02-21 20:05:49
  * @FilePath: /web-mobile-template/src/views/test.vue
  * @Description: 测试页面
 -->
@@ -35,8 +35,18 @@ const userId = ref(0)
 /** EVENT: 点击获取userId按钮 */
 const onClickGetUserInfoButton = async() => {
 
-    const _result = await getUserInfoApi()
-    console.log("onClickGetUserInfoButton() _result:", _result)
+    const _result = await getUserInfoApi({
+        testResult: {
+            success: true,
+            message: "success",
+            data: {
+                body: "success",
+                userId: 123,
+                title: "success",
+                id: 1
+            }
+        }
+    })
 
     // 存在错误码或者不存在data数据
     if (!_result.success) {
@@ -55,10 +65,20 @@ const id = ref(0)
 /** EVENT: 点击获取id按钮 */
 const onClickGetIdButton = async() => {
 
-    const _result = await getIdApi({
-        userId: 123
-    })
-    console.log("onClickGetIdButton() _result:", _result)
+    const _result = await getIdApi(
+        {
+            userId: 123
+        },
+        {
+            testResult: {
+                success: true,
+                message: "success",
+                data: {
+                    id: 1
+                }
+            }
+        }
+    )
 
     // 存在错误码或者不存在data数据
     if (!_result.success) {

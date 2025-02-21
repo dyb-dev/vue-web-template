@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2024-10-15 17:36:19
  * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-16 11:39:15
+ * @LastEditTime: 2025-02-21 17:42:50
  * @FilePath: /web-mobile-template/src/router/guard/login.ts
  * @Description: 路由登录守卫模块
  */
@@ -25,19 +25,36 @@ const setupLoginGuard = (router: Router): void => {
     /** 需要登录的路由列表 */
     const _needLoginRouteList = VITE_NEED_LOGIN_ROUTES.split(",")
 
-    const { userInfoStoreState } = useUserInfoStoreWithOut()
+    const { userInfoStoreState, checkLogin } = useUserInfoStoreWithOut()
 
-    router.beforeEach(to => {
+    router.beforeEach(async to => {
 
-        // 如果未登录且目标路由在需要登录的路由列表中，则跳转至登录页
-        if (!userInfoStoreState.isLogin && _needLoginRouteList.includes(to.path)) {
+        // 如果目标路由在需要登录的路由列表中
+        if (_needLoginRouteList.includes(to.path)) {
 
-            return {
-                path: VITE_LOGIN_ROUTE,
-                query: {
-                    ...to.query,
-                    redirectRoute: to.path
+            if (!userInfoStoreState.isCheckedLogin) {
+
+                // 检查登录状态
+                await checkLogin({
+                    testResult: {
+                        success: true,
+                        message: "检查登录成功"
+                    }
+                })
+
+            }
+
+            // 如果未登录且目标路由在需要登录的路由列表中，则跳转至登录页
+            if (!userInfoStoreState.isLogin) {
+
+                return {
+                    path: VITE_LOGIN_ROUTE,
+                    query: {
+                        ...to.query,
+                        redirectRoute: to.path
+                    }
                 }
+
             }
 
         }

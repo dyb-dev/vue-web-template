@@ -1,6 +1,6 @@
 {
     "name": "web-mobile-template",
-    "version": "0.0.6",
+    "version": "1.0.0",
     "description": "基于`vue3全家桶`搭建的Web移动端模板",
     "author": "dyb-dev",
     "license": "MIT",
@@ -10,7 +10,7 @@
     "scripts": {
         "prepare": "husky",
         "dev": "vite",
-        "build": "npm run ts-check & npm run build-only",
+        "build": "npm run ts-check && npm run build-only",
         "build-only": "vite build",
         "preview": "vite preview",
         "ts-check": "vue-tsc --build --force",

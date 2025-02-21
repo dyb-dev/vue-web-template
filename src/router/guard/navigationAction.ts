@@ -9,7 +9,7 @@
 
 import type { Router } from "vue-router"
 
-/** STATIC: 定义一个状态来跟踪上一个路由的索引 */
+/** CONST: 定义一个状态来跟踪上一个路由的索引 */
 let lastRouteIndex: number = 0
 
 /**

@@ -1,10 +1,10 @@
-# Web-Mobile-Template
+# Vue-Web-Template
 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://zh.wikipedia.org/wiki/MIT%E8%A8%B1%E5%8F%AF%E8%AD%89)
 
 ## 项目简介
 
-Web-Mobile-Template 提供了一个用于开发Web移动端网站的基本模板，该项目基于 [Vue3](https://cn.vuejs.org/) + [TS](https://www.typescriptlang.org/) + [Vite](https://cn.vitejs.dev/) 构建，该模板预配置了一些常用的开发工具和插件，帮助你快速开发Web移动端网站，为您带来极致的体验。
+Vue-Web-Template 提供了一个用于开发Web移动端网站的基本模板，该项目基于 [Vue3](https://cn.vuejs.org/) + [TS](https://www.typescriptlang.org/) + [Vite](https://cn.vitejs.dev/) 构建，该模板预配置了一些常用的开发工具和插件，帮助你快速开发Web移动端网站，为您带来极致的体验。
 
 ## 功能特点
 

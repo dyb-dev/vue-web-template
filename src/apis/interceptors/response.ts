@@ -3,7 +3,7 @@
  * @Date: 2025-02-21 19:58:19
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-22 19:54:17
- * @FilePath: /web-mobile-template/src/apis/interceptors/response.ts
+ * @FilePath: /vue-web-template/src/apis/interceptors/response.ts
  * @Description: 响应拦截器模块
  */
 

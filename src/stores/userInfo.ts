@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2024-10-14 15:49:20
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-21 17:37:26
+ * @LastEditTime: 2025-02-22 15:08:45
  * @FilePath: /web-mobile-template/src/stores/userInfo.ts
  * @Description: 用户信息状态管理
  */
@@ -55,15 +55,20 @@ const useUserInfoStore = defineStore("UserInfoStore", () => {
      * @author dyb-dev
      * @date 19/02/2025/  20:38:42
      * @param {ILoginApiParams} params 登录参数
-     * @param {TRequestConfig<ILoginApiResultData>} [testRequestConfig] 测试请求配置
      * @returns {*}  {Promise<AxiosResponse<ILoginApiResultData>>}
      */
-    const login = async(
-        params: ILoginApiParams,
-        testRequestConfig?: TModifyProperties<ITestRequestConfig<ILoginApiResultData>, "test">
-    ): Promise<AxiosResponse<ILoginApiResultData>> => {
+    const login = async(params: ILoginApiParams): Promise<AxiosResponse<ILoginApiResultData>> => {
 
-        const _loginApiResult = await loginApi(params, testRequestConfig)
+        const _loginApiResult = await loginApi(params, {
+            testResult: {
+                success: true,
+                message: "登录成功",
+                data: {
+                    nickName: "123456",
+                    phoneNumber: "13800138000"
+                }
+            }
+        })
 
         // 如果登录失败
         if (_loginApiResult.success) {
@@ -88,10 +93,9 @@ const useUserInfoStore = defineStore("UserInfoStore", () => {
      *
      * @author dyb-dev
      * @date 19/02/2025/  20:36:39
-     * @param {TRequestConfig} [testRequestConfig] 测试请求配置
      * @returns {*}  {Promise<boolean>}
      */
-    const checkLogin = async(testRequestConfig?: TModifyProperties<ITestRequestConfig, "test">): Promise<boolean> => {
+    const checkLogin = async(): Promise<boolean> => {
 
         if (userInfoStoreState.isLogin) {
 
@@ -99,7 +103,12 @@ const useUserInfoStore = defineStore("UserInfoStore", () => {
 
         }
 
-        const _checkLoginApiResult = await checkLoginApi(testRequestConfig)
+        const _checkLoginApiResult = await checkLoginApi({
+            testResult: {
+                success: true,
+                message: "检查登录成功"
+            }
+        })
 
         userInfoStoreState.isLogin = _checkLoginApiResult.success
         userInfoStoreState.isCheckedLogin = true
@@ -113,12 +122,16 @@ const useUserInfoStore = defineStore("UserInfoStore", () => {
      *
      * @author dyb-dev
      * @date 19/02/2025/  20:38:20
-     * @param {TRequestConfig} [testRequestConfig] 测试请求配置
      * @returns {*}  {Promise<AxiosResponse>}
      */
-    const logout = async(testRequestConfig?: TModifyProperties<ITestRequestConfig, "test">): Promise<AxiosResponse> => {
+    const logout = async(): Promise<AxiosResponse> => {
 
-        const _logoutApiResult = await logoutApi(testRequestConfig)
+        const _logoutApiResult = await logoutApi({
+            testResult: {
+                success: true,
+                message: "退出登录成功"
+            }
+        })
 
         if (_logoutApiResult.success) {
 

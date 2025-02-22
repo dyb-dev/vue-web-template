@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2023-11-08 20:03:27
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-21 20:05:40
+ * @LastEditTime: 2025-02-22 15:08:36
  * @FilePath: /web-mobile-template/src/views/login.vue
  * @Description: 登录页面
 -->
@@ -62,22 +62,10 @@ const onClickLoginButton = async() => {
     showLoadingToast({ message: "正在登录...", mask: true, duration: 0 })
 
     // 登录
-    const _loginApiResult = await login(
-        {
-            phoneNumber: phoneNumber.value,
-            password: password.value
-        },
-        {
-            testResult: {
-                success: true,
-                message: "登录成功",
-                data: {
-                    nickName: "123456",
-                    phoneNumber: "13800138000"
-                }
-            }
-        }
-    )
+    const _loginApiResult = await login({
+        phoneNumber: phoneNumber.value,
+        password: password.value
+    })
 
     closeToast()
 

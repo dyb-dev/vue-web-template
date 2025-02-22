@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2024-10-15 17:36:19
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-21 17:42:50
+ * @LastEditTime: 2025-02-22 15:09:12
  * @FilePath: /web-mobile-template/src/router/guard/login.ts
  * @Description: 路由登录守卫模块
  */
@@ -35,12 +35,7 @@ const setupLoginGuard = (router: Router): void => {
             if (!userInfoStoreState.isCheckedLogin) {
 
                 // 检查登录状态
-                await checkLogin({
-                    testResult: {
-                        success: true,
-                        message: "检查登录成功"
-                    }
-                })
+                await checkLogin()
 
             }
 

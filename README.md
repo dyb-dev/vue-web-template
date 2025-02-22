@@ -59,6 +59,12 @@ pnpm build
 pnpm preview
 ```
 
+### 版本升级 & Git提交
+
+```bash
+pnpm release
+```
+
 ## 许可证
 
 本项目基于 `MIT 许可证` 开源。

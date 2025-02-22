@@ -3,7 +3,7 @@
  * @Date: 2023-11-08 15:55:25
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-21 17:52:11
- * @FilePath: /web-mobile-template/src/router/index.ts
+ * @FilePath: /vue-web-template/src/router/index.ts
  * @Description: 路由模块
  */
 

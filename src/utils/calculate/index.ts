@@ -3,7 +3,7 @@
  * @Date: 2024-10-15 21:15:33
  * @LastEditors: dyb-dev
  * @LastEditTime: 2024-11-08 21:34:49
- * @FilePath: /web-mobile-template/src/utils/calculate/index.ts
+ * @FilePath: /vue-web-template/src/utils/calculate/index.ts
  * @Description: 计算相关工具函数
  */
 

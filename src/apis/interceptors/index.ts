@@ -3,7 +3,7 @@
  * @Date: 2025-02-21 19:58:19
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-21 19:58:30
- * @FilePath: /web-mobile-template/src/apis/interceptors/index.ts
+ * @FilePath: /vue-web-template/src/apis/interceptors/index.ts
  * @Description: Api 拦截器模块
  */
 

@@ -3,7 +3,7 @@
  * @Date: 2024-10-13 21:32:31
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-20 13:34:21
- * @FilePath: /web-mobile-template/src/stores/theme.ts
+ * @FilePath: /vue-web-template/src/stores/theme.ts
  * @Description: 主题状态管理
  */
 

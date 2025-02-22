@@ -3,7 +3,7 @@
  * @Date: 2024-10-15 15:12:03
  * @LastEditors: dyb-dev
  * @LastEditTime: 2024-10-16 22:42:43
- * @FilePath: /web-mobile-template/src/utils/userInfo/index.ts
+ * @FilePath: /vue-web-template/src/utils/userInfo/index.ts
  * @Description: 用户信息相关工具函数
  */
 

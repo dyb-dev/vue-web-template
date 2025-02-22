@@ -3,7 +3,7 @@
  * @Date: 2024-03-16 14:53:14
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-21 20:00:55
- * @FilePath: /web-mobile-template/src/apis/index.ts
+ * @FilePath: /vue-web-template/src/apis/index.ts
  * @Description: 接口模块
  */
 

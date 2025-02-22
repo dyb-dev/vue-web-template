@@ -3,7 +3,7 @@
  * @Date: 2025-02-21 20:00:04
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-21 20:00:15
- * @FilePath: /web-mobile-template/src/apis/request/log.ts
+ * @FilePath: /vue-web-template/src/apis/request/log.ts
  * @Description: 请求日志模块
  */
 

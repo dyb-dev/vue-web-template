@@ -3,7 +3,7 @@
  * @Date: 2024-10-15 17:29:18
  * @LastEditors: dyb-dev
  * @LastEditTime: 2024-10-16 22:16:30
- * @FilePath: /web-mobile-template/src/types/userInfo.ts
+ * @FilePath: /vue-web-template/src/types/userInfo.ts
  * @Description: 用户信息类型模块
  */
 

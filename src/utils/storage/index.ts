@@ -3,7 +3,7 @@
  * @Date: 2024-06-01 15:33:40
  * @LastEditors: dyb-dev
  * @LastEditTime: 2024-10-15 22:53:55
- * @FilePath: /web-mobile-template/src/utils/storage/index.ts
+ * @FilePath: /vue-web-template/src/utils/storage/index.ts
  * @Description: 缓存相关工具函数
  */
 

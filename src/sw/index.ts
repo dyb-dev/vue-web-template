@@ -3,7 +3,7 @@
  * @Date: 2024-04-24 16:44:39
  * @LastEditors: dyb-dev
  * @LastEditTime: 2024-10-15 17:29:58
- * @FilePath: /web-mobile-template/src/sw/index.ts
+ * @FilePath: /vue-web-template/src/sw/index.ts
  * @Description: Service Worker 模块
  */
 

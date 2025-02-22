@@ -3,7 +3,7 @@
  * @Date: 2024-04-21 17:53:06
  * @LastEditors: dyb-dev
  * @LastEditTime: 2024-10-15 14:56:54
- * @FilePath: /web-mobile-template/src/utils/device/index.ts
+ * @FilePath: /vue-web-template/src/utils/device/index.ts
  * @Description: 设备相关工具函数
  */
 

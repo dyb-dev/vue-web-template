@@ -3,7 +3,7 @@
  * @Date: 2024-03-15 00:48:42
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-13 16:56:11
- * @FilePath: /web-mobile-template/src/stores/index.ts
+ * @FilePath: /vue-web-template/src/stores/index.ts
  * @Description: store模块
  */
 

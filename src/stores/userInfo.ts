@@ -3,7 +3,7 @@
  * @Date: 2024-10-14 15:49:20
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-22 15:08:45
- * @FilePath: /web-mobile-template/src/stores/userInfo.ts
+ * @FilePath: /vue-web-template/src/stores/userInfo.ts
  * @Description: 用户信息状态管理
  */
 

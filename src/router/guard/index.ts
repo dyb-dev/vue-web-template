@@ -3,7 +3,7 @@
  * @Date: 2024-07-23 17:27:15
  * @LastEditors: dyb-dev
  * @LastEditTime: 2024-10-17 14:00:52
- * @FilePath: /web-mobile-template/src/router/guard/index.ts
+ * @FilePath: /vue-web-template/src/router/guard/index.ts
  * @Description: 路由守卫模块
  */
 

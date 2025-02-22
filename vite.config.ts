@@ -3,7 +3,7 @@
  * @Date: 2023-11-08 15:55:25
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-21 20:51:06
- * @FilePath: /web-mobile-template/vite.config.ts
+ * @FilePath: /vue-web-template/vite.config.ts
  * @Description: vite配置文件
  */
 

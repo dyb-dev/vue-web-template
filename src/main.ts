@@ -3,7 +3,7 @@
  * @Date: 2023-11-09 20:58:09
  * @LastEditors: dyb-dev
  * @LastEditTime: 2024-10-17 21:02:08
- * @FilePath: /web-mobile-template/src/main.ts
+ * @FilePath: /vue-web-template/src/main.ts
  * @Description: 程序入口文件
  */
 

@@ -3,7 +3,7 @@
  * @Date: 2024-10-14 17:08:19
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-21 20:00:59
- * @FilePath: /web-mobile-template/src/apis/modules/activity.ts
+ * @FilePath: /vue-web-template/src/apis/modules/activity.ts
  * @Description: 本次活动接口模块
  */
 

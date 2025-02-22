@@ -3,7 +3,7 @@
  * @Date: 2024-10-17 12:36:04
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-21 17:19:12
- * @FilePath: /web-mobile-template/src/types/dts/api.d.ts
+ * @FilePath: /vue-web-template/src/types/dts/api.d.ts
  * @Description: api 类型声明补充文件
  */
 

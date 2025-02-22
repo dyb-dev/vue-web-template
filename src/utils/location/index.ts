@@ -3,7 +3,7 @@
  * @Date: 2024-10-16 22:11:50
  * @LastEditors: dyb-dev
  * @LastEditTime: 2024-10-16 22:12:16
- * @FilePath: /web-mobile-template/src/utils/location/index.ts
+ * @FilePath: /vue-web-template/src/utils/location/index.ts
  * @Description: 位置相关工具函数
  */
 

@@ -3,7 +3,7 @@
  * @Date: 2024-10-14 00:04:44
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-21 20:05:49
- * @FilePath: /web-mobile-template/src/views/test.vue
+ * @FilePath: /vue-web-template/src/views/test.vue
  * @Description: 测试页面
 -->
 

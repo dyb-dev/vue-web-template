@@ -3,7 +3,7 @@
  * @Date: 2024-07-23 21:08:18
  * @LastEditors: dyb-dev
  * @LastEditTime: 2024-10-17 13:59:41
- * @FilePath: /web-mobile-template/src/router/guard/navigationAction.ts
+ * @FilePath: /vue-web-template/src/router/guard/navigationAction.ts
  * @Description: 路由导航动作守卫模块
  */
 

@@ -3,7 +3,7 @@
  * @Date: 2024-06-28 14:19:02
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-21 15:50:24
- * @FilePath: /web-mobile-template/src/utils/url/index.ts
+ * @FilePath: /vue-web-template/src/utils/url/index.ts
  * @Description: url相关工具函数
  */
 

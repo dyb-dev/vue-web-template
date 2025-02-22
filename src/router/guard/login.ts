@@ -3,7 +3,7 @@
  * @Date: 2024-10-15 17:36:19
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-22 15:09:12
- * @FilePath: /web-mobile-template/src/router/guard/login.ts
+ * @FilePath: /vue-web-template/src/router/guard/login.ts
  * @Description: 路由登录守卫模块
  */
 

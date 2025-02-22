@@ -3,7 +3,7 @@
  * @Date: 2025-02-21 20:00:04
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-21 22:38:57
- * @FilePath: /web-mobile-template/src/apis/request/index.ts
+ * @FilePath: /vue-web-template/src/apis/request/index.ts
  * @Description: 封装请求模块
  */
 

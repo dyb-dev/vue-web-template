@@ -3,7 +3,7 @@
  * @Date: 2025-02-21 16:31:15
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-21 16:35:06
- * @FilePath: /web-mobile-template/vite/utils/asset.ts
+ * @FilePath: /vue-web-template/vite/utils/asset.ts
  * @Description: Vite 资源处理模块
  */
 

@@ -3,7 +3,7 @@
  * @Date: 2025-02-21 16:31:29
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-21 16:34:29
- * @FilePath: /web-mobile-template/vite/utils/plugin.ts
+ * @FilePath: /vue-web-template/vite/utils/plugin.ts
  * @Description: Vite 插件模块
  */
 

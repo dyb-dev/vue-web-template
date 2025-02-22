@@ -3,7 +3,7 @@
  * @Date: 2023-11-08 15:55:25
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-20 18:18:01
- * @FilePath: /web-mobile-template/src/views/home.vue
+ * @FilePath: /vue-web-template/src/views/home.vue
  * @Description: 首页
 -->
 

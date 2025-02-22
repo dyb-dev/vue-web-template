@@ -3,7 +3,7 @@
  * @Date: 2024-10-09 22:15:17
  * @LastEditors: dyb-dev
  * @LastEditTime: 2024-10-15 14:11:12
- * @FilePath: /web-mobile-template/src/utils/env/index.ts
+ * @FilePath: /vue-web-template/src/utils/env/index.ts
  * @Description: 环境相关工具函数
  */
 

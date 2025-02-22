@@ -3,7 +3,7 @@
  * @Date: 2025-02-21 20:20:15
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-21 20:20:19
- * @FilePath: /web-mobile-template/src/components/index.ts
+ * @FilePath: /vue-web-template/src/components/index.ts
  * @Description: 组件模块
  */
 

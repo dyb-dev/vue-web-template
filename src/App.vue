@@ -3,7 +3,7 @@
  * @Date: 2023-11-08 15:55:25
  * @LastEditors: dyb-dev
  * @LastEditTime: 2024-10-14 15:05:48
- * @FilePath: /web-mobile-template/src/App.vue
+ * @FilePath: /vue-web-template/src/App.vue
  * @Description: App根组件
 -->
 

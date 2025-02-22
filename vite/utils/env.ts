@@ -3,7 +3,7 @@
  * @Date: 2025-02-21 16:31:22
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-21 16:33:25
- * @FilePath: /web-mobile-template/vite/utils/env.ts
+ * @FilePath: /vue-web-template/vite/utils/env.ts
  * @Description: Vite 环境相关工具模块
  */
 

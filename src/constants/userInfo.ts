@@ -3,7 +3,7 @@
  * @Date: 2024-10-16 22:13:43
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-21 21:04:49
- * @FilePath: /web-mobile-template/src/constants/userInfo.ts
+ * @FilePath: /vue-web-template/src/constants/userInfo.ts
  * @Description: 用户信息常量模块
  */
 

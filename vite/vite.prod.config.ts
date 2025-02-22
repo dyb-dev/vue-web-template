@@ -3,7 +3,7 @@
  * @Date: 2024-04-24 13:25:54
  * @LastEditors: dyb-dev
  * @LastEditTime: 2024-10-17 14:05:41
- * @FilePath: /web-mobile-template/vite/vite.prod.config.ts
+ * @FilePath: /vue-web-template/vite/vite.prod.config.ts
  * @Description: vite生产环境配置
  */
 

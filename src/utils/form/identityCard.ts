@@ -3,7 +3,7 @@
  * @Date: 2024-10-15 16:23:19
  * @LastEditors: dyb-dev
  * @LastEditTime: 2024-10-15 17:07:14
- * @FilePath: /web-mobile-template/src/utils/form/identityCard.ts
+ * @FilePath: /vue-web-template/src/utils/form/identityCard.ts
  * @Description: 身份证相关工具函数
  */
 

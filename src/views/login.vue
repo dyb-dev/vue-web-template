@@ -3,7 +3,7 @@
  * @Date: 2023-11-08 20:03:27
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-22 15:08:36
- * @FilePath: /web-mobile-template/src/views/login.vue
+ * @FilePath: /vue-web-template/src/views/login.vue
  * @Description: 登录页面
 -->
 

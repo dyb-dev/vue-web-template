@@ -3,7 +3,7 @@
  * @Date: 2024-10-14 16:00:39
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-21 20:18:05
- * @FilePath: /web-mobile-template/src/apis/modules/userInfo.ts
+ * @FilePath: /vue-web-template/src/apis/modules/userInfo.ts
  * @Description: 用户信息相关接口
  */
 

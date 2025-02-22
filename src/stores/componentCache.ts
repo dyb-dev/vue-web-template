@@ -3,7 +3,7 @@
  * @Date: 2023-11-08 15:55:25
  * @LastEditors: dyb-dev
  * @LastEditTime: 2024-10-15 10:24:40
- * @FilePath: /web-mobile-template/src/stores/componentCache.ts
+ * @FilePath: /vue-web-template/src/stores/componentCache.ts
  * @Description: 组件缓存状态管理
  */
 

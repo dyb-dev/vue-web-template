@@ -3,7 +3,7 @@
  * @Date: 2024-08-02 22:58:16
  * @LastEditors: dyb-dev
  * @LastEditTime: 2024-10-14 13:47:20
- * @FilePath: /web-mobile-template/types/index.d.ts
+ * @FilePath: /vue-web-template/types/index.d.ts
  * @Description: app 和 node 公共的环境类型模块
  */
 

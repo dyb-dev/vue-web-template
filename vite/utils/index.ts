@@ -3,7 +3,7 @@
  * @Date: 2024-01-28 19:52:10
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-21 16:35:28
- * @FilePath: /web-mobile-template/vite/utils/index.ts
+ * @FilePath: /vue-web-template/vite/utils/index.ts
  * @Description: vite配置相关工具函数
  */
 

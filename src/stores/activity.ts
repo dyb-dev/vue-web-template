@@ -3,7 +3,7 @@
  * @Date: 2024-10-14 15:02:42
  * @LastEditors: dyb-dev
  * @LastEditTime: 2024-10-17 19:51:09
- * @FilePath: /web-mobile-template/src/stores/activity.ts
+ * @FilePath: /vue-web-template/src/stores/activity.ts
  * @Description: 活动状态管理
  */
 

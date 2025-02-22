@@ -3,7 +3,7 @@
  * @Date: 2024-02-27 16:07:20
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-19 15:55:16
- * @FilePath: /web-mobile-template/src/utils/index.ts
+ * @FilePath: /vue-web-template/src/utils/index.ts
  * @Description: 工具函数模块
  */
 

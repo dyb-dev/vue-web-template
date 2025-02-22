@@ -3,7 +3,7 @@
  * @Date: 2024-06-01 14:36:15
  * @LastEditors: dyb-dev
  * @LastEditTime: 2025-02-19 15:56:56
- * @FilePath: /web-mobile-template/src/utils/dateTime/index.ts
+ * @FilePath: /vue-web-template/src/utils/dateTime/index.ts
  * @Description: 日期时间相关工具函数
  */
 

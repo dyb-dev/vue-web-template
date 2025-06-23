@@ -2,11 +2,13 @@
  * @Author: dyb-dev
  * @Date: 2024-04-21 15:47:17
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-06-21 14:29:34
+ * @LastEditTime: 2025-06-24 00:29:19
  * @FilePath: /vue-web-template/src/hooks/index.ts
  * @Description: hook模块
  */
 
+/** 导出用户交互相关hooks函数 */
+export * from "./interaction"
 /** 导出监控相关hooks函数 */
 export * from "./monitor"
 /** 导出滚动控制相关hooks函数 */

@@ -2,13 +2,13 @@
  * @Author: dyb-dev
  * @Date: 2024-08-02 22:58:16
  * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-14 13:47:20
+ * @LastEditTime: 2025-06-29 17:45:01
  * @FilePath: /vue-web-template/types/index.d.ts
  * @Description: app 和 node 公共的环境类型模块
  */
 
 /** 项目信息(全局) */
-declare interface IProjectInfo {
+interface IProjectInfo {
     /** 项目版本 */
     version: string
     /** 项目最后构建时间 */

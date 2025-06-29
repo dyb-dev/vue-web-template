@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2025-05-28 23:44:43
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-05-28 23:44:53
+ * @LastEditTime: 2025-06-29 17:31:51
  * @FilePath: /vue-web-template/src/hooks/timer/index.ts
  * @Description: 时间控制相关hooks函数
  */
@@ -16,7 +16,7 @@ export interface IUsePollingReturn {
 }
 
 /**
- * FUN: 使用轮询器
+ * HOOKS: 使用轮询器
  *
  * @author dyb-dev
  * @date 28/05/2025/  23:01:57

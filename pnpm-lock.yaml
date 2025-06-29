@@ -55,8 +55,8 @@ importers:
         specifier: ^0.0.3
         version: 0.0.3(stylelint@16.11.0(typescript@5.6.3))
       '@dyb-dev/ts-config':
-        specifier: ^0.0.7
-        version: 0.0.7(typescript@5.6.3)
+        specifier: ^0.1.2
+        version: 0.1.2(typescript@5.6.3)
       '@mistjs/vite-plugin-px2viewport':
         specifier: ^0.0.11
         version: 0.0.11(typescript@5.6.3)(vite@5.4.11(@types/node@22.10.1)(sass@1.81.0)(sugarss@2.0.0)(terser@5.36.0))
@@ -700,8 +700,8 @@ packages:
     peerDependencies:
       stylelint: ^16.2.1
 
-  '@dyb-dev/ts-config@0.0.7':
-    resolution: {integrity: sha512-/Xof7k6hhMApFzklKgqwCLCzbz5wy7wPB0XheT00KA9BcadNquf07b0kRjve8hfRH8m/eEfHYBSOJ7zPw93SCg==}
+  '@dyb-dev/ts-config@0.1.2':
+    resolution: {integrity: sha512-5T4Gfxcdh1zYr4JtBmOLbnLVcnoUlYHSTvAnaH6O9kILKQTdhtPDMIvFt1TA1CuqsQ0+pHKxaPT8wSq3bt1ndw==}
     engines: {node: '>=18.0.0', pnpm: '>=8.15.5'}
     peerDependencies:
       typescript: ^5.4.5
@@ -5553,7 +5553,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@dyb-dev/ts-config@0.0.7(typescript@5.6.3)':
+  '@dyb-dev/ts-config@0.1.2(typescript@5.6.3)':
     dependencies:
       typescript: 5.6.3
 

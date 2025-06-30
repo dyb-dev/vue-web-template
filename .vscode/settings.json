@@ -51,6 +51,7 @@
         "tsconfig.json": "tsconfig.*.json",
         "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, pnpm-workspace.yaml, LICENSE"
     },
+    "terminal.integrated.scrollback": 2000,
 
     // #endregion
 
@@ -341,7 +342,13 @@
         "vant",
         "persistedstate",
         "mistjs"
-    ]
+    ],
+
+    // #endregion
+
+    // #region CODE: CSS Peek 插件配置
+
+    "cssPeek.peekToExclude": ["**/node_modules/**", "**/bower_components/**", "**/.history/**"]
 
     // #endregion
 }

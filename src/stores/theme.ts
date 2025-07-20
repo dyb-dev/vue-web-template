@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2024-10-13 21:32:31
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-20 13:34:21
+ * @LastEditTime: 2025-07-20 13:12:26
  * @FilePath: /vue-web-template/src/stores/theme.ts
  * @Description: 主题状态管理
  */
@@ -48,10 +48,7 @@ const useThemeStore = defineStore("ThemeStore", () => {
 
         themeStoreState.theme = isMatchesDark ? ETheme.Dark : ETheme.Light
 
-        // 文档根元素的类列表
-        const _classList = document.documentElement.classList
-
-        isMatchesDark ? _classList.add(THEME_DARK_CLASS_NAME) : _classList.remove(THEME_DARK_CLASS_NAME)
+        document.documentElement.classList.toggle(THEME_DARK_CLASS_NAME, isMatchesDark)
 
     }
 

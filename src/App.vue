@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2023-11-08 15:55:25
  * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-14 15:05:48
+ * @LastEditTime: 2025-07-20 13:07:34
  * @FilePath: /vue-web-template/src/App.vue
  * @Description: App根组件
 -->
@@ -44,6 +44,7 @@ const onBeforeEnter = () => {
 .config-provider {
     position: relative;
     height: 100vh;
+    overflow: auto;
 }
 
 .jump-enter-active,

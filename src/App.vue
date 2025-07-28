@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2023-11-08 15:55:25
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-07-26 13:15:48
+ * @LastEditTime: 2025-07-28 13:24:12
  * @FilePath: /vue-web-template/src/App.vue
  * @Description: App根组件
 -->
@@ -11,17 +11,17 @@
 import { ConfigProvider } from "vant"
 import { RouterView } from "vue-router"
 
-import { useSetupApi, useSetupTheme, useSetupVConsole } from "@/hooks"
+import { setupApi, setupTheme, setupVConsole } from "@/setup"
 import { useComponentCacheStore, useThemeStore } from "@/stores"
 
-/** HOOKS: 使用初始化 VConsole 调试器 */
-useSetupVConsole()
+/** FUN: 使用初始化 VConsole 调试器 */
+setupVConsole()
 
-/** HOOKS: 使用初始化接口配置 */
-useSetupApi()
+/** FUN: 使用初始化接口配置 */
+setupApi()
 
-/** HOOKS: 使用初始化主题 */
-useSetupTheme()
+/** FUN: 使用初始化主题 */
+setupTheme()
 
 /** HOOKS: 使用主题商店 */
 const { themeStoreState } = useThemeStore()

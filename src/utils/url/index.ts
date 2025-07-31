@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2024-06-28 14:19:02
  * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:16:48
+ * @LastEditTime: 2025-08-01 00:52:02
  * @FilePath: /vue-web-template/src/utils/url/index.ts
  * @Description: url相关工具函数
  */
@@ -219,7 +219,7 @@ export const toAbsoluteUrl = (options: IToAbsoluteUrlOptions): string => {
 
     let _url = [_urlOrigin, _basePath, _relativePath].filter(Boolean).join("/")
 
-    if (!isAbsoluteUrl(relativePath)) {
+    if (!isAbsoluteUrl(_url)) {
 
         _url = `/${_url}`
 

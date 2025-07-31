@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2024-10-14 15:02:42
- * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-17 19:51:09
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:09:01
  * @FilePath: /vue-web-template/src/stores/activity.ts
  * @Description: 活动状态管理
  */
@@ -18,7 +18,7 @@ interface IActivityStoreState {
 }
 
 /** Store 实例 */
-const useActivityStore = defineStore(
+export const useActivityStore = defineStore(
     "ActivityStore",
     () => {
 
@@ -47,10 +47,8 @@ const useActivityStore = defineStore(
  * @date 15/09/2024/  23:53:35
  * @returns store实例
  */
-const useActivityStoreWithOut = () => {
+export const useActivityStoreWithOut = () => {
 
     return useActivityStore(store)
 
 }
-
-export { useActivityStore, useActivityStoreWithOut }

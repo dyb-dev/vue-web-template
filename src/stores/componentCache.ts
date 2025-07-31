@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2023-11-08 15:55:25
- * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-15 10:24:40
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:09:18
  * @FilePath: /vue-web-template/src/stores/componentCache.ts
  * @Description: 组件缓存状态管理
  */
@@ -13,7 +13,7 @@ import { reactive } from "vue"
 import { store } from "."
 
 /** 组件缓存操作类型枚举 */
-enum EComponentCacheActionType {
+export const enum EComponentCacheActionType {
     Add = "add",
     Delete = "delete"
 }
@@ -24,7 +24,7 @@ interface IComponentCacheStoreState {
     list: string[]
 }
 
-const useComponentCacheStore = defineStore("ComponentCacheStore", () => {
+export const useComponentCacheStore = defineStore("ComponentCacheStore", () => {
 
     const componentCacheStoreState = reactive<IComponentCacheStoreState>({
         list: []
@@ -129,10 +129,8 @@ const useComponentCacheStore = defineStore("ComponentCacheStore", () => {
  * @date 15/09/2024/  23:53:35
  * @returns store实例
  */
-const useComponentCacheStoreWithOut = () => {
+export const useComponentCacheStoreWithOut = () => {
 
     return useComponentCacheStore(store)
 
 }
-
-export { EComponentCacheActionType, useComponentCacheStore, useComponentCacheStoreWithOut }

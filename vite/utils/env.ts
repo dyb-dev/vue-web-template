@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-21 16:31:22
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-21 16:33:25
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:14:54
  * @FilePath: /vue-web-template/vite/utils/env.ts
  * @Description: Vite 环境相关工具模块
  */
@@ -21,7 +21,7 @@ import pkg from "../../package.json"
  * @param {ImportMetaEnv} env - 环境变量
  * @returns {*}  {IProjectInfo}
  */
-const generateProjectInfo = (env: ImportMetaEnv): IProjectInfo => {
+export const generateProjectInfo = (env: ImportMetaEnv): IProjectInfo => {
 
     const { name, version, dependencies } = pkg
     const _dayObj = dayjs()
@@ -47,7 +47,7 @@ const generateProjectInfo = (env: ImportMetaEnv): IProjectInfo => {
  * @export
  * @returns {*}  {string}
  */
-const getAvailableIPv4HostIP = (): string => {
+export const getAvailableIPv4HostIP = (): string => {
 
     const _address = networkInterfaces().en0?.find(details => !details.internal && details.family === "IPv4")?.address
     if (!_address) {
@@ -78,7 +78,7 @@ const WATCH_FILE_LIST = ["public", "src", "index.html"]
  * @param {string[]} [watchFileList=["public", "src", "index.html"]] - 监听文件列表
  * @returns {*}  {boolean}
  */
-const isIgnoreWatchFile = (path: string, projectRootDir: string, watchFileList: string[] = WATCH_FILE_LIST): boolean => {
+export const isIgnoreWatchFile = (path: string, projectRootDir: string, watchFileList: string[] = WATCH_FILE_LIST): boolean => {
 
     // 如果没有创建正则表达式
     if (!watchFileRegex) {
@@ -95,5 +95,3 @@ const isIgnoreWatchFile = (path: string, projectRootDir: string, watchFileList: 
     return !watchFileRegex.test(path)
 
 }
-
-export { generateProjectInfo, getAvailableIPv4HostIP, isIgnoreWatchFile }

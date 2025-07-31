@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2024-07-23 21:08:18
- * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-17 13:59:41
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:08:51
  * @FilePath: /vue-web-template/src/router/guard/navigationAction.ts
  * @Description: 路由导航动作守卫模块
  */
@@ -20,7 +20,7 @@ let lastRouteIndex: number = 0
  * @export
  * @param {Router} router - 路由
  */
-const setupNavigationActionGuard = (router: Router): void => {
+export const setupNavigationActionGuard = (router: Router): void => {
 
     router.afterEach(to => {
 
@@ -37,5 +37,3 @@ const setupNavigationActionGuard = (router: Router): void => {
     })
 
 }
-
-export { setupNavigationActionGuard }

@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2024-10-15 16:23:19
- * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-15 17:07:14
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:11:07
  * @FilePath: /vue-web-template/src/utils/form/identityCard.ts
  * @Description: 身份证相关工具函数
  */
@@ -139,7 +139,7 @@ const _isParityBit = (identityCardNumber: string): boolean => {
  * @param {string} identityCardNumber - 身份证号码
  * @returns {*}  {boolean} 是否为有效的身份证号码
  */
-const isIdentityCard = (identityCardNumber: string): boolean => {
+export const isIdentityCard = (identityCardNumber: string): boolean => {
 
     const _check = /^[1-9]\d{5}[1-9]\d{3}((0[1-9])|(1[0-2]))((0[1-9])|([1-2][0-9])|(3[0-1]))\d{3}(\d|x|X)$/.test(
         identityCardNumber
@@ -147,5 +147,3 @@ const isIdentityCard = (identityCardNumber: string): boolean => {
     return _check && _isProvinceCode(identityCardNumber) && _isBirthday(identityCardNumber) && _isParityBit(identityCardNumber)
 
 }
-
-export { isIdentityCard }

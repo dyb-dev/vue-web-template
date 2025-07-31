@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2024-10-14 17:08:19
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-21 20:00:59
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:06:54
  * @FilePath: /vue-web-template/src/apis/modules/activity.ts
  * @Description: 本次活动接口模块
  */
@@ -14,7 +14,7 @@ import { sendRequest } from "../request"
 import type { AxiosResponse } from "axios"
 
 /** 获取用户信息的结果数据 */
-interface IGetUserInfoApiResultData {
+export interface IGetUserInfoApiResultData {
     /** 内容 */
     body: string
     /** id */
@@ -33,7 +33,7 @@ interface IGetUserInfoApiResultData {
  * @param {TModifyProperties<ITestRequestConfig<IGetUserInfoApiResultData>, "test">} [testRequestConfig] 测试请求配置
  * @returns {*}  {Promise<AxiosResponse<IGetUserInfoApiResultData>>} 结果数据
  */
-const getUserInfoApi = async(
+export const getUserInfoApi = async(
     testRequestConfig?: TModifyProperties<ITestRequestConfig<IGetUserInfoApiResultData>, "test">
 ): Promise<AxiosResponse<IGetUserInfoApiResultData>> => {
 
@@ -46,13 +46,13 @@ const getUserInfoApi = async(
 }
 
 /** 获取id的参数 */
-interface IGetIdApiParams {
+export interface IGetIdApiParams {
     /** 用户唯一标识 */
     userId: number
 }
 
 /** 获取id的结果数据 */
-interface IGetIdApiResultData {
+export interface IGetIdApiResultData {
     /** id */
     id: number
 }
@@ -66,7 +66,7 @@ interface IGetIdApiResultData {
  * @param {TModifyProperties<ITestRequestConfig<IGetIdApiResultData>, "test">} [testRequestConfig] 测试请求配置
  * @returns {*}  {Promise<AxiosResponse<IGetIdApiResultData>>} 结果数据
  */
-const getIdApi = async(
+export const getIdApi = async(
     params: IGetIdApiParams,
     testRequestConfig?: TModifyProperties<ITestRequestConfig<IGetIdApiResultData>, "test">
 ): Promise<AxiosResponse<IGetIdApiResultData>> => {
@@ -78,7 +78,3 @@ const getIdApi = async(
     })
 
 }
-
-export type { IGetUserInfoApiResultData, IGetIdApiParams, IGetIdApiResultData }
-
-export { getUserInfoApi, getIdApi }

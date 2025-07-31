@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-21 16:31:29
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-21 16:34:29
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:15:09
  * @FilePath: /vue-web-template/vite/utils/plugin.ts
  * @Description: Vite 插件模块
  */
@@ -26,7 +26,7 @@ import type { PluginOption } from "vite"
  * @param {string} outDir - 输出目录
  * @returns {*}  {PluginOption}
  */
-const ViteHtmlFileType = (fileType: "html" | "aspx" | "php", outDir: string): PluginOption => {
+export const ViteHtmlFileType = (fileType: "html" | "aspx" | "php", outDir: string): PluginOption => {
 
     try {
 
@@ -127,7 +127,7 @@ interface ISetupVitePWAParam {
  * @param {ISetupVitePWAParam} param - 参数
  * @returns {*}  {any[]}
  */
-const setupVitePWA = (param: ISetupVitePWAParam): any[] => {
+export const setupVitePWA = (param: ISetupVitePWAParam): any[] => {
 
     const {
         projectRootDir,
@@ -250,5 +250,3 @@ const setupVitePWA = (param: ISetupVitePWAParam): any[] => {
     })
 
 }
-
-export { setupVitePWA, ViteHtmlFileType }

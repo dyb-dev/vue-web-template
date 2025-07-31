@@ -17,7 +17,7 @@ import { isIos } from "@/utils"
  * @param {string} imgSelectorName - 图片选择器
  * @param {() => void} callback - 长按保存结束回调
  */
-const useMonitorImgPressSave = (imgSelectorName: string, callback: () => void) => {
+export const useMonitorImgPressSave = (imgSelectorName: string, callback: () => void) => {
 
     try {
 
@@ -139,5 +139,3 @@ const useMonitorImgPressSave = (imgSelectorName: string, callback: () => void) =
     }
 
 }
-
-export { useMonitorImgPressSave }

@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2024-10-13 21:32:31
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-07-26 13:16:55
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:09:41
  * @FilePath: /vue-web-template/src/stores/theme.ts
  * @Description: 主题状态管理
  */
@@ -13,7 +13,7 @@ import { reactive } from "vue"
 import { store } from "."
 
 /** 主题枚举 */
-const enum ETheme {
+export const enum ETheme {
     /** 浅色主题 */
     Light = "light",
     /** 深色主题 */
@@ -29,7 +29,7 @@ interface IThemeStoreState {
 }
 
 /** Store 实例 */
-const useThemeStore = defineStore("ThemeStore", () => {
+export const useThemeStore = defineStore("ThemeStore", () => {
 
     /** Store 状态 */
     const themeStoreState = reactive<IThemeStoreState>({
@@ -62,10 +62,8 @@ const useThemeStore = defineStore("ThemeStore", () => {
  * @date 15/09/2024/  23:53:35
  * @returns store实例
  */
-const useThemeStoreWithOut = () => {
+export const useThemeStoreWithOut = () => {
 
     return useThemeStore(store)
 
 }
-
-export { ETheme, useThemeStore, useThemeStoreWithOut }

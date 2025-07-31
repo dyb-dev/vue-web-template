@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-21 16:31:15
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-21 16:35:06
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:14:20
  * @FilePath: /vue-web-template/vite/utils/asset.ts
  * @Description: Vite 资源处理模块
  */
@@ -37,7 +37,7 @@ const IGNORE_FILE_LIST = [".md", ".DS_Store"]
  * @param {string[]} [ignoreFileList=[".md", ".DS_Store"]] - 复制文件时需要忽略的文件列表
  * @returns {*}  {IFileTarget[]}
  */
-const getCopyFileList = (
+export const getCopyFileList = (
     publicAssetsDir: string,
     outDir: string,
     outAssetsDir: string,
@@ -122,7 +122,7 @@ const getCopyFileList = (
  * @param {string[]} [ignoreFileList=[]] - 忽略文件列表
  * @returns {*}  {boolean}
  */
-const isIncludedIgnoreFile = (fileName: string, ignoreFileList: string[] = []): boolean =>
+export const isIncludedIgnoreFile = (fileName: string, ignoreFileList: string[] = []): boolean =>
     ignoreFileList.some(item => fileName.includes(item))
 
 /**
@@ -134,7 +134,7 @@ const isIncludedIgnoreFile = (fileName: string, ignoreFileList: string[] = []): 
  * @param {string[]} [ignoreFileList=[]] - 忽略文件列表
  * @returns {*}  {boolean}
  */
-const isAvailableFilesInDir = (dirPath: string, ignoreFileList: string[] = []): boolean => {
+export const isAvailableFilesInDir = (dirPath: string, ignoreFileList: string[] = []): boolean => {
 
     const _filesInDir = readdirSync(dirPath)
 
@@ -192,7 +192,7 @@ const ASSET_MODULE_SPLIT_CONFIG_KEY_LIST = Object.keys(ASSET_MODULE_SPLIT_CONFIG
  * @param {Record<string,string>} [splitConfig=assetModuleSplitConfig] - 资源模块拆分配置（输出目录名:文件类型集合）
  * @returns {*}  {string}
  */
-const assetFileNames = (
+export const assetFileNames = (
     fileName: string,
     outAssetsDir: string,
     outFileNameTemplate: string,
@@ -274,7 +274,7 @@ const THIRD_PARTY_MODULE_SPLIT_CONFIG_KEY_LIST = Object.keys(THIRD_PARTY_MODULE_
  * @param {Record<string,string[]>} [splitConfig=thirdPartyModuleSplitConfig] - 第三方模块拆分配置（chunk名:模块集合）
  * @returns {*}  {(string | void)} - 拆分的chunk名
  */
-const manualChunks = (
+export const manualChunks = (
     id: string,
     getModuleInfo: GetModuleInfo,
     splitConfig: Record<string, string[]> = THIRD_PARTY_MODULE_SPLIT_CONFIG
@@ -402,5 +402,3 @@ const isDepInclude = (
  * @returns {*}  {boolean}
  */
 const isDepModules = (id: string, depModules: string[]): boolean => depModules.some(item => id.includes(`/${item}/`))
-
-export { getCopyFileList, isIncludedIgnoreFile, isAvailableFilesInDir, assetFileNames, manualChunks }

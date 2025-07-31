@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2024-10-15 14:46:15
- * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-15 21:15:53
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:13:22
  * @FilePath: /vue-web-template/src/utils/view/index.ts
  * @Description: 视图相关工具函数
  */
@@ -15,7 +15,7 @@
  * @param {number} [checkInterval=100] - 检查间隔时间 单位 ms
  * @returns {*}  {Promise<void>} - 返回一个 Promise，视图可见时会被 resolve
  */
-const waitUntilViewVisible = (checkInterval: number = 100): Promise<void> => {
+export const waitUntilViewVisible = (checkInterval: number = 100): Promise<void> => {
 
     return new Promise<void>(resolve => {
 
@@ -67,5 +67,3 @@ const waitUntilViewVisible = (checkInterval: number = 100): Promise<void> => {
     })
 
 }
-
-export { waitUntilViewVisible }

@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2024-04-24 16:44:39
- * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-15 17:29:58
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:09:58
  * @FilePath: /vue-web-template/src/sw/index.ts
  * @Description: Service Worker 模块
  */
@@ -13,7 +13,7 @@
  * @author dyb-dev
  * @date 24/04/2024/  10:54:36
  */
-const setupServiceWorker = async() => {
+export const setupServiceWorker = async() => {
 
     try {
 
@@ -43,5 +43,3 @@ const setupServiceWorker = async() => {
     }
 
 }
-
-export { setupServiceWorker }

@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-21 19:58:19
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-22 19:54:17
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:06:38
  * @FilePath: /vue-web-template/src/apis/interceptors/response.ts
  * @Description: 响应拦截器模块
  */
@@ -17,7 +17,7 @@ import type { AxiosResponse } from "axios"
  * @author dyb-dev
  * @date 21/02/2025/  19:39:09
  */
-const setupResponseInterceptor = () => {
+export const setupResponseInterceptor = () => {
 
     axios.interceptors.response.use(
         // 2xx 范围内的状态码都会触发该函数
@@ -55,5 +55,3 @@ const setupResponseInterceptor = () => {
     )
 
 }
-
-export { setupResponseInterceptor }

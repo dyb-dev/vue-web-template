@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2024-06-28 14:19:02
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-21 15:50:24
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:16:48
  * @FilePath: /vue-web-template/src/utils/url/index.ts
  * @Description: url相关工具函数
  */
@@ -18,7 +18,7 @@ import { isDevEnv } from "@/utils"
  * @date 14/06/2023/  00:57:34
  * @returns {string} 当前地址, 默认返回值:> http://localhost/
  */
-const getCurrentUrl = (): string => location?.href || "http://localhost/"
+export const getCurrentUrl = (): string => location?.href || "http://localhost/"
 
 /**
  * FUN: 获取当前 URL 网址的协议、域名、端口号组成的字符串
@@ -27,7 +27,7 @@ const getCurrentUrl = (): string => location?.href || "http://localhost/"
  * @date 15/10/2024/  12:32:42
  * @returns {*}  {string} - 当前地址的协议、域名、端口号组成的字符串
  */
-const getCurrentUrlOrigin = (): string => location?.origin || "http://localhost/"
+export const getCurrentUrlOrigin = (): string => location?.origin || "http://localhost/"
 
 /**
  * FUN: 获取基础 URL（去除查询参数）
@@ -37,7 +37,7 @@ const getCurrentUrlOrigin = (): string => location?.origin || "http://localhost/
  * @param {string} url - 完整的 URL 字符串
  * @returns {*}  {string} - 去除查询参数后的基础 URL
  */
-const getBaseUrl = (url: string): string => queryString.parseUrl(url).url
+export const getBaseUrl = (url: string): string => queryString.parseUrl(url).url
 
 /**
  * FUN: 获取当前基础 URL（去除查询参数）
@@ -46,7 +46,7 @@ const getBaseUrl = (url: string): string => queryString.parseUrl(url).url
  * @date 15/10/2024/  10:46:33
  * @returns {*}  {string} - 当前基础 URL
  */
-const getCurrentBaseUrl = (): string => getBaseUrl(getCurrentUrl())
+export const getCurrentBaseUrl = (): string => getBaseUrl(getCurrentUrl())
 
 /**
  * FUN: 获取 url 的 查询参数对象
@@ -56,7 +56,7 @@ const getCurrentBaseUrl = (): string => getBaseUrl(getCurrentUrl())
  * @param {string} url 需要解析的 URL
  * @returns {queryString.ParsedQuery<string>} query对象
  */
-const getUrlQuery = (url: string): queryString.ParsedQuery<string> => queryString.parseUrl(url).query
+export const getUrlQuery = (url: string): queryString.ParsedQuery<string> => queryString.parseUrl(url).query
 
 /**
  * FUN: 获取当前 url 的 查询参数对象
@@ -65,7 +65,7 @@ const getUrlQuery = (url: string): queryString.ParsedQuery<string> => queryStrin
  * @date 15/10/2024/  10:47:22
  * @returns {*}  {queryString.ParsedQuery<string>} - 当前 url 的查询参数对象
  */
-const getCurrentUrlQuery = (): queryString.ParsedQuery<string> => getUrlQuery(getCurrentUrl())
+export const getCurrentUrlQuery = (): queryString.ParsedQuery<string> => getUrlQuery(getCurrentUrl())
 
 /**
  * FUN: 根据 key 从 url 的 查询参数对象 中获取单个参数值
@@ -76,7 +76,7 @@ const getCurrentUrlQuery = (): queryString.ParsedQuery<string> => getUrlQuery(ge
  * @param {string} key query 的 key
  * @returns {string} query 的 value
  */
-const getUrlQueryValue = (url: string, key: string): string => (getUrlQuery(url)[key] as string) || ""
+export const getUrlQueryValue = (url: string, key: string): string => (getUrlQuery(url)[key] as string) || ""
 
 /**
  * FUN: 获取当前 url 的 查询参数对象 中的指定参数值
@@ -86,7 +86,7 @@ const getUrlQueryValue = (url: string, key: string): string => (getUrlQuery(url)
  * @param {string} key query 的 key
  * @returns {*}  {string} - query 的 value
  */
-const getCurrentUrlQueryValue = (key: string): string => getUrlQueryValue(getCurrentUrl(), key)
+export const getCurrentUrlQueryValue = (key: string): string => getUrlQueryValue(getCurrentUrl(), key)
 
 /**
  * FUN: 设置或更新 从 url 的 查询参数对象 中的指定参数，并返回更新后的 URL 字符串
@@ -99,7 +99,7 @@ const getCurrentUrlQueryValue = (key: string): string => getUrlQueryValue(getCur
  * @param {queryString.StringifyOptions} [options] stringifyUrl 的 options
  * @returns {string} 设置或更新后的 url
  */
-const setUrlQueryValue = (url: string, key: string, value: string, options?: queryString.StringifyOptions): string => {
+export const setUrlQueryValue = (url: string, key: string, value: string, options?: queryString.StringifyOptions): string => {
 
     const _query = getUrlQuery(url)
 
@@ -119,7 +119,7 @@ const setUrlQueryValue = (url: string, key: string, value: string, options?: que
  * @param {queryString.StringifyOptions} [options] stringifyUrl 的 options
  * @returns {*}  {string} - 更新后的 URL 字符串
  */
-const setCurrentUrlQueryValue = (key: string, value: string, options?: queryString.StringifyOptions): string =>
+export const setCurrentUrlQueryValue = (key: string, value: string, options?: queryString.StringifyOptions): string =>
     setUrlQueryValue(getCurrentUrl(), key, value, options)
 
 /**
@@ -132,7 +132,11 @@ const setCurrentUrlQueryValue = (key: string, value: string, options?: queryStri
  * @param {queryString.StringifyOptions} [options] stringifyUrl 的 options
  * @returns {string} 更新后的 URL 字符串
  */
-const mergeUrlQuery = (url: string, obj: queryString.ParsedQuery<string>, options?: queryString.StringifyOptions): string => {
+export const mergeUrlQuery = (
+    url: string,
+    obj: queryString.ParsedQuery<string>,
+    options?: queryString.StringifyOptions
+): string => {
 
     const _query = getUrlQuery(url)
 
@@ -151,7 +155,7 @@ const mergeUrlQuery = (url: string, obj: queryString.ParsedQuery<string>, option
  * @param {queryString.StringifyOptions} [options] stringifyUrl 的 options
  * @returns {*}  {string} - 更新后的 URL 字符串
  */
-const mergeCurrentUrlQuery = (obj: queryString.ParsedQuery<string>, options?: queryString.StringifyOptions): string =>
+export const mergeCurrentUrlQuery = (obj: queryString.ParsedQuery<string>, options?: queryString.StringifyOptions): string =>
     mergeUrlQuery(getCurrentUrl(), obj, options)
 
 /**
@@ -163,10 +167,10 @@ const mergeCurrentUrlQuery = (obj: queryString.ParsedQuery<string>, options?: qu
  * @param {string} path - 路径
  * @returns {*}  {boolean} - 是否为绝对路径
  */
-const isAbsoluteUrl = (path: string): boolean => /^(https?:\/\/|:\/\/|[a-zA-Z0-9.-]+:\d+|:\d+)/.test(path)
+export const isAbsoluteUrl = (path: string): boolean => /^(https?:\/\/|:\/\/|[a-zA-Z0-9.-]+:\d+|:\d+)/.test(path)
 
 /** 相对路径转换为绝对路径的选项 */
-interface IToAbsoluteUrlOptions {
+export interface IToAbsoluteUrlOptions {
     /** 相对 URL 路径 */
     relativePath: string
     /**
@@ -189,7 +193,7 @@ interface IToAbsoluteUrlOptions {
  * @param {IToAbsoluteUrlOptions} options - 选项
  * @returns {*}  {string} - 绝对路径
  */
-const toAbsoluteUrl = (options: IToAbsoluteUrlOptions): string => {
+export const toAbsoluteUrl = (options: IToAbsoluteUrlOptions): string => {
 
     const {
         env: { VITE_BASE_PATH, VITE_PROXY_DOMAIN }
@@ -209,24 +213,25 @@ const toAbsoluteUrl = (options: IToAbsoluteUrlOptions): string => {
 
     }
 
-    const _urlOrigin = trimUrlSlashes(urlOrigin, { trimStart: false })
+    const _urlOrigin = trimUrlSlashes(urlOrigin)
     const _basePath = trimUrlSlashes(basePath)
-    const _relativePath = trimUrlSlashes(relativePath, { trimEnd: false })
+    const _relativePath = trimUrlSlashes(relativePath)
 
-    const _tempList = []
-    _urlOrigin && _tempList.push(_urlOrigin)
-    _basePath && _tempList.push(_basePath)
-    _relativePath && _tempList.push(_relativePath)
+    let _url = [_urlOrigin, _basePath, _relativePath].filter(Boolean).join("/")
 
-    const _url = _tempList.join("/")
+    if (!isAbsoluteUrl(relativePath)) {
 
-    if (!version) {
-
-        return _url
+        _url = `/${_url}`
 
     }
 
-    return setUrlQueryValue(_url, "version", version, {})
+    if (version) {
+
+        _url = setUrlQueryValue(_url, "version", version, {})
+
+    }
+
+    return _url
 
 }
 
@@ -238,7 +243,7 @@ const toAbsoluteUrl = (options: IToAbsoluteUrlOptions): string => {
  * @param {string} assetsRelativePath - 资源相对路径
  * @returns {*}  {string} - 拼接后的资源绝对路径
  */
-const toAssetsAbsoluteUrl = (assetsRelativePath: string) =>
+export const toAssetsAbsoluteUrl = (assetsRelativePath: string) =>
     toAbsoluteUrl({
         relativePath: assetsRelativePath,
         urlOrigin: getCurrentUrlOrigin(),
@@ -256,7 +261,7 @@ const toAssetsAbsoluteUrl = (assetsRelativePath: string) =>
  * @param {boolean} [options.trimEnd=true] - 是否移除结尾的斜杠
  * @returns {string} - 处理后的url
  */
-const trimUrlSlashes = (url: string, options: { trimStart?: boolean; trimEnd?: boolean } = {}): string => {
+export const trimUrlSlashes = (url: string, options: { trimStart?: boolean; trimEnd?: boolean } = {}): string => {
 
     const { trimStart = true, trimEnd = true } = options
 
@@ -273,25 +278,4 @@ const trimUrlSlashes = (url: string, options: { trimStart?: boolean; trimEnd?: b
     }
     return _url
 
-}
-
-export type { IToAbsoluteUrlOptions }
-
-export {
-    toAssetsAbsoluteUrl,
-    trimUrlSlashes,
-    getCurrentUrl,
-    getCurrentUrlOrigin,
-    getUrlQuery,
-    getBaseUrl,
-    getUrlQueryValue,
-    setUrlQueryValue,
-    mergeUrlQuery,
-    isAbsoluteUrl,
-    toAbsoluteUrl,
-    getCurrentBaseUrl,
-    getCurrentUrlQuery,
-    getCurrentUrlQueryValue,
-    setCurrentUrlQueryValue,
-    mergeCurrentUrlQuery
 }

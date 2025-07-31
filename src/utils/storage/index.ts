@@ -1,19 +1,19 @@
 /*
  * @Author: dyb-dev
  * @Date: 2024-06-01 15:33:40
- * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-15 22:53:55
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:11:59
  * @FilePath: /vue-web-template/src/utils/storage/index.ts
  * @Description: 缓存相关工具函数
  */
 
 /** 可以序列化的对象 */
-interface ISerializableObject {
+export interface ISerializableObject {
     [key: string]: TSerializable
 }
 
 /** 可以序列化的类型 */
-type TSerializable = TPrimitive | Array<TSerializable> | ISerializableObject
+export type TSerializable = TPrimitive | Array<TSerializable> | ISerializableObject
 
 /**
  * FUN: 设置本地缓存
@@ -24,7 +24,7 @@ type TSerializable = TPrimitive | Array<TSerializable> | ISerializableObject
  * @param {TSerializable} value 存储数据
  * @param {(number | null)} [expiry=null] 过期时间
  */
-const setLocalStorage = <T extends TSerializable = TSerializable>(key: string, value: T, expiry?: number) => {
+export const setLocalStorage = <T extends TSerializable = TSerializable>(key: string, value: T, expiry?: number) => {
 
     localStorage.setItem(
         key,
@@ -45,7 +45,7 @@ const setLocalStorage = <T extends TSerializable = TSerializable>(key: string, v
  * @param {string} key 存储key
  * @returns {*}  {(T | void)} 存储数据
  */
-const getLocalStorage = <T extends TSerializable = TSerializable>(key: string): T | void => {
+export const getLocalStorage = <T extends TSerializable = TSerializable>(key: string): T | void => {
 
     const _value = localStorage.getItem(key)
 
@@ -70,7 +70,7 @@ const getLocalStorage = <T extends TSerializable = TSerializable>(key: string): 
  * @date 09/01/2024/  11:20:17
  * @param {string} key 存储key
  */
-const deleteLocalStorage = (key: string) => {
+export const deleteLocalStorage = (key: string) => {
 
     localStorage.removeItem(key)
 
@@ -82,7 +82,7 @@ const deleteLocalStorage = (key: string) => {
  * @author dyb-dev
  * @date 15/10/2024/  13:57:54
  */
-const clearLocalStorage = () => {
+export const clearLocalStorage = () => {
 
     localStorage.clear()
 
@@ -97,7 +97,7 @@ const clearLocalStorage = () => {
  * @param {TSerializable} value 存储数据
  * @param {(number | null)} [expiry=null] 过期时间
  */
-const setSessionStorage = <T extends TSerializable = TSerializable>(key: string, value: T, expiry?: number) => {
+export const setSessionStorage = <T extends TSerializable = TSerializable>(key: string, value: T, expiry?: number) => {
 
     sessionStorage.setItem(
         key,
@@ -118,7 +118,7 @@ const setSessionStorage = <T extends TSerializable = TSerializable>(key: string,
  * @param {string} key 存储key
  * @returns {*}  {(T | void)} 存储数据
  */
-const getSessionStorage = <T extends TSerializable = TSerializable>(key: string): T | void => {
+export const getSessionStorage = <T extends TSerializable = TSerializable>(key: string): T | void => {
 
     const _value = sessionStorage.getItem(key)
 
@@ -143,7 +143,7 @@ const getSessionStorage = <T extends TSerializable = TSerializable>(key: string)
  * @date 09/01/2024/  11:20:24
  * @param {string} key 存储key
  */
-const deleteSessionStorage = (key: string) => {
+export const deleteSessionStorage = (key: string) => {
 
     sessionStorage.removeItem(key)
 
@@ -155,7 +155,7 @@ const deleteSessionStorage = (key: string) => {
  * @author dyb-dev
  * @date 15/10/2024/  13:57:54
  */
-const clearSessionStorage = () => {
+export const clearSessionStorage = () => {
 
     sessionStorage.clear()
 
@@ -167,23 +167,9 @@ const clearSessionStorage = () => {
  * @author dyb-dev
  * @date 27/01/2024/  14:58:21
  */
-const clearAllStorage = () => {
+export const clearAllStorage = () => {
 
     localStorage.clear()
     sessionStorage.clear()
 
-}
-
-export type { ISerializableObject, TSerializable }
-
-export {
-    setLocalStorage,
-    setSessionStorage,
-    getLocalStorage,
-    getSessionStorage,
-    deleteLocalStorage,
-    deleteSessionStorage,
-    clearLocalStorage,
-    clearSessionStorage,
-    clearAllStorage
 }

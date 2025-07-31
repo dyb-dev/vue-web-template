@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2023-11-08 15:55:25
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-21 17:52:11
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:08:12
  * @FilePath: /vue-web-template/src/router/index.ts
  * @Description: 路由模块
  */
@@ -15,7 +15,7 @@ import { setupGuard } from "./guard"
 const { VITE_BASE_PATH, VITE_HOME_ROUTE, VITE_HTML_FILE_TYPE } = __PROJECT_INFO__.env
 
 /** router 实例 */
-const router = createRouter({
+export const router = createRouter({
     history: createWebHistory(VITE_BASE_PATH),
     routes: [
         ...routes,
@@ -39,5 +39,3 @@ const router = createRouter({
 
 // 设置路由守卫
 setupGuard(router)
-
-export { router }

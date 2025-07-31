@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2024-04-24 13:25:54
- * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-17 14:05:41
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:13:36
  * @FilePath: /vue-web-template/vite/vite.prod.config.ts
  * @Description: vite生产环境配置
  */
@@ -26,7 +26,7 @@ import type { PluginOption, UserConfig } from "vite"
  * @param {ISetupEnvConfigParam} param - 参数
  * @returns {*}  {UserConfig}
  */
-const setupProdConfig = (param: ISetupEnvConfigParam): UserConfig => {
+export const setupProdConfig = (param: ISetupEnvConfigParam): UserConfig => {
 
     const { projectRootDir, port, browserOpenUrl, env } = param
     const {
@@ -145,5 +145,3 @@ const setupProdConfig = (param: ISetupEnvConfigParam): UserConfig => {
     }
 
 }
-
-export { setupProdConfig }

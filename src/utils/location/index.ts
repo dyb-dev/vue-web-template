@@ -1,14 +1,14 @@
 /*
  * @Author: dyb-dev
  * @Date: 2024-10-16 22:11:50
- * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-16 22:12:16
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:11:25
  * @FilePath: /vue-web-template/src/utils/location/index.ts
  * @Description: 位置相关工具函数
  */
 
 /** 位置 */
-interface ILocation {
+export interface ILocation {
     /** 纬度 */
     latitude: number
     /** 经度 */
@@ -24,7 +24,7 @@ interface ILocation {
  * @param {ILocation} endLocation 结束位置
  * @returns {*}  {number} 两个坐标之间的距离 (单位: 米)
  */
-const calculateDistanceBetweenLocations = (startLocation: ILocation, endLocation: ILocation): number => {
+export const calculateDistanceBetweenLocations = (startLocation: ILocation, endLocation: ILocation): number => {
 
     // 解构起始位置的纬度和经度
     const { latitude: startLatitude, longitude: startLongitude } = startLocation
@@ -71,7 +71,3 @@ const calculateDistanceBetweenLocations = (startLocation: ILocation, endLocation
     return parseFloat(_distance.toFixed(0))
 
 }
-
-export type { ILocation }
-
-export { calculateDistanceBetweenLocations }

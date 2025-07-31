@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2024-10-15 17:36:19
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-22 15:09:12
+ * @LastEditors: v_zhgtzhong
+ * @LastEditTime: 2025-08-01 00:08:45
  * @FilePath: /vue-web-template/src/router/guard/login.ts
  * @Description: 路由登录守卫模块
  */
@@ -18,7 +18,7 @@ import type { Router } from "vue-router"
  * @date 16/10/2024/  11:39:10
  * @param {Router} router - 路由
  */
-const setupLoginGuard = (router: Router): void => {
+export const setupLoginGuard = (router: Router): void => {
 
     const { VITE_LOGIN_ROUTE, VITE_NEED_LOGIN_ROUTES } = __PROJECT_INFO__.env
 
@@ -59,5 +59,3 @@ const setupLoginGuard = (router: Router): void => {
     })
 
 }
-
-export { setupLoginGuard }

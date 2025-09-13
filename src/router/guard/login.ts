@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2024-10-15 17:36:19
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:08:45
+ * @LastEditors: dyb-dev
+ * @LastEditTime: 2025-09-13 18:30:57
  * @FilePath: /vue-web-template/src/router/guard/login.ts
  * @Description: 路由登录守卫模块
  */
@@ -20,41 +20,44 @@ import type { Router } from "vue-router"
  */
 export const setupLoginGuard = (router: Router): void => {
 
-    const { VITE_LOGIN_ROUTE, VITE_NEED_LOGIN_ROUTES } = __PROJECT_INFO__.env
-
-    /** 需要登录的路由列表 */
-    const _needLoginRouteList = VITE_NEED_LOGIN_ROUTES.split(",")
+    const { VITE_LOGIN_ROUTE } = __PROJECT_INFO__.env
 
     const { userInfoStoreState, checkLogin } = useUserInfoStoreWithOut()
 
     router.beforeEach(async to => {
 
-        // 如果目标路由在需要登录的路由列表中
-        if (_needLoginRouteList.includes(to.path)) {
+        // 检查当前路由是否需要登录权限
+        const requireAuth = to.meta?.requireAuth ?? false
 
-            if (!userInfoStoreState.isCheckedLogin) {
+        // 如果不需要登录权限，直接放行
+        if (!requireAuth) {
 
-                // 检查登录状态
-                await checkLogin()
-
-            }
-
-            // 如果未登录且目标路由在需要登录的路由列表中，则跳转至登录页
-            if (!userInfoStoreState.isLogin) {
-
-                return {
-                    path: VITE_LOGIN_ROUTE,
-                    query: {
-                        ...to.query,
-                        redirectRoute: to.path
-                    }
-                }
-
-            }
+            return true
 
         }
 
-        return true
+        // 如果还未检查登录状态，先检查登录状态
+        if (!userInfoStoreState.isCheckedLogin) {
+
+            // 检查登录状态
+            await checkLogin()
+
+        }
+
+        // 如果已登录，直接放行
+        if (userInfoStoreState.isLogin) {
+
+            return true
+
+        }
+
+        return {
+            path: VITE_LOGIN_ROUTE,
+            query: {
+                ...to.query,
+                redirectRoute: to.path
+            }
+        }
 
     })
 

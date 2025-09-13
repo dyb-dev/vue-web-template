@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2024-10-14 00:04:44
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-21 20:05:49
+ * @LastEditTime: 2025-09-13 18:33:28
  * @FilePath: /vue-web-template/src/views/test.vue
  * @Description: 测试页面
 -->
@@ -16,10 +16,19 @@ import { useRoute } from "vue-router"
 import { getIdApi, getUserInfoApi } from "@/apis"
 import { router } from "@/router"
 
-/** HOOKS: 设置页面 Title */
-useTitle("测试")
+/** 定义页面路由信息 */
+definePage({
+    meta: {
+        title: "测试",
+        requireAuth: true
+    }
+})
 
-const { query } = useRoute()
+/** HOOKS: 获取当前路由实例 */
+const { query, meta } = useRoute()
+/** HOOKS: 设置页面 Title */
+useTitle(meta.title)
+
 console.log("测试页面入参:", query)
 
 /** EVENT: 点击页面返回 */

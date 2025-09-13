@@ -25,8 +25,6 @@ interface ImportMetaEnv {
     readonly VITE_PUBLIC_ASSETS_DIR: string
     /** 登录页面的路由 默认:/login */
     readonly VITE_LOGIN_ROUTE: string
-    /** 需要登录的路由集合，如果涉及多个，用逗号分隔 默认:空 */
-    readonly VITE_NEED_LOGIN_ROUTES: string
     /** 首页路由 默认:/home */
     readonly VITE_HOME_ROUTE: string
     /** 本地服务器代理目标域 默认:http://xxx.com/ */

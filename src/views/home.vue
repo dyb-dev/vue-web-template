@@ -1,8 +1,8 @@
 <!--
  * @Author: dyb-dev
- * @Date: 2023-11-08 15:55:25
+ * @Date: 2025-09-11 03:07:22
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-20 18:18:01
+ * @LastEditTime: 2025-09-13 18:43:02
  * @FilePath: /vue-web-template/src/views/home.vue
  * @Description: 首页
 -->
@@ -10,13 +10,23 @@
 <script setup lang="ts">
 import { useTitle } from "@vueuse/core"
 import { Button, Icon } from "vant"
+import { useRoute } from "vue-router"
 
 import Cube from "@/components/Cube.vue"
 import { router } from "@/router"
 import { getCurrentUrlQuery } from "@/utils"
 
+/** 定义页面路由信息 */
+definePage({
+    meta: {
+        title: "首页"
+    }
+})
+
+/** HOOKS: 获取当前路由实例 */
+const { meta } = useRoute()
 /** HOOKS: 设置页面 Title */
-useTitle("首页")
+useTitle(meta.title)
 
 console.log("首页入参", getCurrentUrlQuery())
 
@@ -52,6 +62,10 @@ function onClickJumpButton() {
             @click="onClickJumpButton"
         />
 
+        <div class="home__router-view">
+            <!-- 子路由视图 -->
+            <RouterView />
+        </div>
         <Cube />
     </section>
 </template>
@@ -95,13 +109,20 @@ function onClickJumpButton() {
 
     &__button {
         width: fit-content;
-        margin: 0 auto 350px;
+        margin: 0 auto;
         @include text-gradient-effect-mixin();
 
         /* stylelint-disable-next-line order/order */
         &:deep(.van-icon) {
             @include text-gradient-effect-mixin();
         }
+    }
+
+    &__router-view {
+        width: 86%;
+        height: 66.667vw;
+        margin: 0 auto;
+        margin-top: 100px;
     }
 }
 </style>

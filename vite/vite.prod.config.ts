@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2024-04-24 13:25:54
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:13:36
+ * @LastEditors: dyb-dev
+ * @LastEditTime: 2025-10-30 23:23:54
  * @FilePath: /vue-web-template/vite/vite.prod.config.ts
  * @Description: vite生产环境配置
  */
@@ -72,6 +72,15 @@ export const setupProdConfig = (param: ISetupEnvConfigParam): UserConfig => {
             port: port,
             // 浏览器打开地址，默认：http://localhost:8080/，此处与开发环境不同，如果配置了项目资源目录前缀，则需要添加，并且如果使用PWA，则需要添加index.html文件类型，因为PWA的缓存路径带有index.html，否则离线刷新页面会出现404
             open: `${browserOpenUrl}${VITE_BASE_PATH}/index.${VITE_HTML_FILE_TYPE}`
+        },
+
+        esbuild: {
+            // 移除 console.log 语句
+            pure: ["console.log"],
+            // 移除 debugger 语句
+            drop: ["debugger"],
+            // 移除 所有注释
+            legalComments: "none"
         },
 
         build: {

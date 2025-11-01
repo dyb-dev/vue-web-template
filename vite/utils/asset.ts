@@ -1,8 +1,8 @@
 /*
  * @Author: dyb-dev
  * @Date: 2025-02-21 16:31:15
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:14:20
+ * @LastEditors: dyb-dev
+ * @LastEditTime: 2025-11-01 12:41:35
  * @FilePath: /vue-web-template/vite/utils/asset.ts
  * @Description: Vite 资源处理模块
  */
@@ -256,8 +256,8 @@ export const assetFileNames = (
 const THIRD_PARTY_MODULE_SPLIT_CONFIG = {
     "vue-vendor": ["vue", "vue-router", "pinia", "pinia-plugin-persistedstate", "@vueuse/core"],
     "vant-vendor": ["vant", "@dyb-dev/vant-pro"],
-    "utils-vendor": ["axios", "dayjs", "query-string"],
-    "vconsole-vendor": ["vconsole"]
+    "utils-vendor": ["axios", "dayjs", "query-string", "copy-to-clipboard", "es-toolkit", "file-saver", "js-cookie", "zod"],
+    "eruda-vendor": ["eruda"]
 }
 
 /** CONST: 第三方模块拆分配置 `key` 列表 */

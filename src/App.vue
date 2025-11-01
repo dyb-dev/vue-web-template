@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2023-11-08 15:55:25
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-07-28 13:24:12
+ * @LastEditTime: 2025-11-01 11:35:01
  * @FilePath: /vue-web-template/src/App.vue
  * @Description: App根组件
 -->
@@ -11,11 +11,11 @@
 import { ConfigProvider } from "vant"
 import { RouterView } from "vue-router"
 
-import { setupApi, setupTheme, setupVConsole } from "@/setup"
+import { setupApi, setupTheme, setupEruda } from "@/setup"
 import { useComponentCacheStore, useThemeStore } from "@/stores"
 
-/** FUN: 使用初始化 VConsole 调试器 */
-setupVConsole()
+/** FUN: 初始化 eruda 调试器 */
+setupEruda()
 
 /** FUN: 使用初始化接口配置 */
 setupApi()

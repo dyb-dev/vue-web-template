@@ -7,13 +7,13 @@
  * @description: 全局类型声明补充文件
  */
 
-import type VConsole from "vconsole"
+import type { Eruda } from "eruda"
 
 declare global {
     /** 扩展 Window 接口 */
     interface Window {
         MSStream?: any
-        /** vconsole 实例 */
-        vConsole: VConsole
+        /** eruda 实例 */
+        eruda: Eruda
     }
 }

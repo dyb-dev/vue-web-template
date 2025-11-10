@@ -2,13 +2,15 @@
  * @Author: dyb-dev
  * @Date: 2024-02-27 16:07:20
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 18:49:21
+ * @LastEditTime: 2025-11-11 01:45:03
  * @FilePath: /vue-web-template/src/utils/index.ts
  * @Description: 工具函数模块
  */
 
 /** 导出计算相关工具函数 */
 export * from "./calculate"
+/** 导出组件相关工具函数 */
+export * from "./component"
 /** 导出数据处理相关工具函数 */
 export * from "./data"
 /** 导出日期时间相关工具函数 */

@@ -7,7 +7,7 @@
  * @Description: two 子路由
 -->
 
-<script setup lang="ts">
+<script setup lang="tsx">
 import { Button } from "vant"
 
 import { router } from "@/router"

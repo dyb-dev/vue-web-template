@@ -7,7 +7,7 @@
  * @Description: App根组件
 -->
 
-<script setup lang="ts">
+<script setup lang="tsx">
 import { ConfigProvider } from "vant"
 import { RouterView } from "vue-router"
 

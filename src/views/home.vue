@@ -7,7 +7,7 @@
  * @Description: 首页
 -->
 
-<script setup lang="ts">
+<script setup lang="tsx">
 import { useTitle } from "@vueuse/core"
 import { Button, Icon } from "vant"
 import { useRoute } from "vue-router"

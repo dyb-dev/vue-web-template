@@ -2,7 +2,7 @@
  * @Author: dyb-dev
  * @Date: 2023-11-08 15:55:25
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-21 20:51:06
+ * @LastEditTime: 2025-11-11 01:03:17
  * @FilePath: /vue-web-template/vite.config.ts
  * @Description: vite配置文件
  */
@@ -11,6 +11,7 @@ import { resolve } from "path"
 
 import { px2viewport as VitePx2viewport } from "@mistjs/vite-plugin-px2viewport"
 import ViteVue from "@vitejs/plugin-vue"
+import ViteVueJsx from "@vitejs/plugin-vue-jsx"
 import PostcssAutoprefixer from "autoprefixer"
 import { getPort } from "portfinder-sync"
 import PostcssMobileForever from "postcss-mobile-forever"
@@ -167,6 +168,8 @@ export default defineConfig(({ mode }: ConfigEnv) => {
             }),
             // 处理和编译 .vue 文件
             ViteVue(),
+            // 处理和编译 .vue jsx/tsx 文件
+            ViteVueJsx(),
             // 替换html文件占位符
             ViteHtml({
                 // 是否压缩html文件

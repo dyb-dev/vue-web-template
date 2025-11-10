@@ -7,7 +7,7 @@
  * @Description: 登录页面
 -->
 
-<script setup lang="ts">
+<script setup lang="tsx">
 import { useTitle } from "@vueuse/core"
 import { showDialog, showToast, Field, Button, showLoadingToast, closeToast } from "vant"
 import { ref } from "vue"

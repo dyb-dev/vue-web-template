@@ -2,12 +2,12 @@
  * @Author: dyb-dev
  * @Date: 2024-10-14 22:32:11
  * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-22 19:54:09
+ * @LastEditTime: 2025-11-11 01:06:15
  * @FilePath: /vue-web-template/src/components/Cube.vue
  * @Description: 立方体组件
 -->
 
-<script setup lang="ts">
+<script setup lang="tsx">
 import { Image } from "vant"
 import { ref } from "vue"
 

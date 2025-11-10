@@ -7,7 +7,7 @@
  @description 404 页面
 -->
 
-<script setup lang="ts">
+<script setup lang="tsx">
 import { Empty, Button } from "vant"
 
 import { router } from "@/router"

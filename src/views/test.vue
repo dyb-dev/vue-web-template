@@ -7,7 +7,7 @@
  * @Description: 测试页面
 -->
 
-<script setup lang="ts">
+<script setup lang="tsx">
 import { useTitle } from "@vueuse/core"
 import { Button, showToast } from "vant"
 import { ref } from "vue"

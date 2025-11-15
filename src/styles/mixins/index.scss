@@ -95,10 +95,6 @@
 ) {
     $shadow-intensity: (5px, 10px, 20px, 50px);
 
-    .#{$sub-class-name} {
-        animation: flicker $animation-duration linear forwards;
-    }
-
     @for $i from 1 through $sub-class-count {
         .#{$sub-class-name}-#{$i} {
             animation-delay: $delay-step * $i;
@@ -128,6 +124,10 @@
             color: inherit;
             text-shadow: none;
         }
+    }
+
+    .#{$sub-class-name} {
+        animation: flicker $animation-duration linear forwards;
     }
 }
 

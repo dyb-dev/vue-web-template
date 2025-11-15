@@ -10,6 +10,7 @@ import ViteVueJsx from "@vitejs/plugin-vue-jsx"
 import PostcssAutoprefixer from "autoprefixer"
 import { getPort } from "portfinder-sync"
 import PostcssMobileForever from "postcss-mobile-forever"
+import UnoCSS from "unocss/vite"
 import ViteRouter from "unplugin-vue-router/vite"
 import { defineConfig, loadEnv, mergeConfig } from "vite"
 import { createHtmlPlugin as ViteHtml } from "vite-plugin-html"
@@ -165,6 +166,8 @@ export default defineConfig(({ mode }: ConfigEnv) => {
             ViteVue(),
             // 处理和编译 .vue jsx/tsx 文件
             ViteVueJsx(),
+            // 处理原子 css 提取
+            UnoCSS(),
             // 替换html文件占位符
             ViteHtml({
                 // 是否压缩html文件

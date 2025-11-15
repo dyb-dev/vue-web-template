@@ -25,7 +25,7 @@ useTitle(meta.title)
 
 console.log("首页入参", getCurrentUrlQuery())
 
-function onClickJumpButton() {
+const onClickJumpButton = () => {
 
     router.push({ path: "/test", query: { test: "test" } })
 

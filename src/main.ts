@@ -2,10 +2,6 @@
  * @FileDesc: 程序入口文件
  */
 
-import "vant/lib/index.css"
-import "@dyb-dev/vant-pro/dist/style.css"
-import "./styles/index.scss"
-
 import { Lazyload } from "vant"
 import { createApp } from "vue"
 
@@ -13,6 +9,11 @@ import App from "@/App.vue"
 import { router } from "@/router"
 import { store } from "@/stores"
 // import { setupServiceWorker } from "@/sw"
+
+import "virtual:uno.css"
+import "vant/lib/index.css"
+import "@dyb-dev/vant-pro/dist/style.css"
+import "./styles/index.scss"
 
 /** TODO: 如果需要使用 PWA 则解开此段代码 */
 // setupServiceWorker()

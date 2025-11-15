@@ -62,6 +62,8 @@
         "wayou.vscode-todo-highlight",
         // Todo Tree 插件
         "gruntfuggly.todo-tree",
+        // unocss 插件
+        "antfu.unocss",
         // Var Conversion 插件
         "xiaoxintongxue.var-conv",
         // Vue - Official 插件

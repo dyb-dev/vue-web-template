@@ -393,7 +393,8 @@
         "zepto",
         "vant",
         "persistedstate",
-        "mistjs"
+        "mistjs",
+        "unocss"
     ],
 
     // #endregion

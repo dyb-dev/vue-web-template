@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2023-11-08 15:55:25
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:08:12
- * @FilePath: /vue-web-template/src/router/index.ts
- * @Description: 路由模块
+ * @FileDesc: 路由模块
  */
 
 import { createRouter, createWebHistory } from "vue-router"

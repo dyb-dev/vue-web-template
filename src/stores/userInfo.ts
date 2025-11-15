@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-10-14 15:49:20
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:09:52
- * @FilePath: /vue-web-template/src/stores/userInfo.ts
- * @Description: 用户信息状态管理
+ * @FileDesc: 用户信息状态管理
  */
 
 import { defineStore } from "pinia"

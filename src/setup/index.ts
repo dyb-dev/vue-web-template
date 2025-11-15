@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-07-26 13:17:29
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-01 11:34:22
- * @FilePath: /vue-web-template/src/setup/index.ts
- * @Description: 初始化模块
+ * @FileDesc: 初始化模块
  */
 
 /** 导出初始化接口配置 */

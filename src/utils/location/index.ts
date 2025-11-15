@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-10-16 22:11:50
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:11:25
- * @FilePath: /vue-web-template/src/utils/location/index.ts
- * @Description: 位置相关工具函数
+ * @FileDesc: 位置相关工具函数
  */
 
 /** 位置 */

@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-10-14 16:00:39
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:07:17
- * @FilePath: /vue-web-template/src/apis/modules/userInfo.ts
- * @Description: 用户信息相关接口
+ * @FileDesc: 用户信息相关接口
  */
 
 import { sendRequest } from "../request"

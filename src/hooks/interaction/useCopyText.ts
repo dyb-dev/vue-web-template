@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-08-16 13:42:32
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-08-16 13:44:02
- * @FilePath: /vue-web-template/src/hooks/interaction/useCopyText.ts
- * @Description: 使用复制文本
+ * @FileDesc: 使用复制文本
  */
 
 import copy from "copy-to-clipboard"

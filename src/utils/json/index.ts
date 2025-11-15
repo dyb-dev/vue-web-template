@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-09-13 01:20:01
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 18:38:57
- * @FilePath: /vue-web-template/src/utils/json/index.ts
- * @Description: json 相关工具函数
+ * @FileDesc: json 相关工具函数
  */
 
 import { saveAs } from "file-saver"

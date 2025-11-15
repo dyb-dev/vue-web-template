@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2023-11-09 20:58:09
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-07-26 13:15:24
- * @FilePath: /vue-web-template/src/main.ts
- * @Description: 程序入口文件
+ * @FileDesc: 程序入口文件
  */
 
 import "vant/lib/index.css"

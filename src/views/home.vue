@@ -1,11 +1,6 @@
 <!--
- * @Author: dyb-dev
- * @Date: 2025-09-11 03:07:22
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 18:43:02
- * @FilePath: /vue-web-template/src/views/home.vue
- * @Description: 首页
--->
+ * @FileDesc: 首页
+ -->
 
 <script setup lang="tsx">
 import { useTitle } from "@vueuse/core"

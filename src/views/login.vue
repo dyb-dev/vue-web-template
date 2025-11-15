@@ -1,11 +1,6 @@
 <!--
- * @Author: dyb-dev
- * @Date: 2023-11-08 20:03:27
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 18:34:01
- * @FilePath: /vue-web-template/src/views/login.vue
- * @Description: 登录页面
--->
+ * @FileDesc: 登录页面
+ -->
 
 <script setup lang="tsx">
 import { useTitle } from "@vueuse/core"

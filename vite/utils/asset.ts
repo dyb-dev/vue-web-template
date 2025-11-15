@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-21 16:31:15
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-01 12:41:35
- * @FilePath: /vue-web-template/vite/utils/asset.ts
- * @Description: Vite 资源处理模块
+ * @FileDesc: Vite 资源处理模块
  */
 
 import { readdirSync, statSync } from "fs"

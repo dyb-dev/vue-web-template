@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-05-28 23:45:42
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-06-29 16:50:06
- * @FilePath: /vue-web-template/src/utils/data/index.ts
- * @Description: 数据处理相关工具函数
+ * @FileDesc: 数据处理相关工具函数
  */
 
 /**

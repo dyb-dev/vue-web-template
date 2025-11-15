@@ -1,11 +1,6 @@
 <!--
- * @Author: dyb-dev
- * @Date: 2025-11-10 15:24:59
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-11 01:51:42
- * @FilePath: /vue-web-template/src/components/popup/Popup/Popup.vue
- * @Description: 弹出层
--->
+ * @FileDesc: 弹出层
+ -->
 
 <script setup lang="tsx" generic="Result extends IBaseResult = IDefaultResult">
 import { useVModels } from "@vueuse/core"

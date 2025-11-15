@@ -1,11 +1,6 @@
 <!--
- * @Author: dyb-dev
- * @Date: 2025-11-10 16:17:36
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-11 01:43:18
- * @FilePath: /vue-web-template/src/components/dialog/DemoDialog/Default.vue
- * @Description: 默认插槽
--->
+ * @FileDesc: 默认插槽
+ -->
 
 <script setup lang="tsx">
 import { onMounted } from "vue"

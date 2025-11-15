@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-11-10 14:49:31
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-11 01:43:11
- * @FilePath: /vue-web-template/src/components/dialog/Dialog/context.ts
- * @Description: 对话框上下文
+ * @FileDesc: 对话框上下文
  */
 
 import { inject, provide } from "vue"

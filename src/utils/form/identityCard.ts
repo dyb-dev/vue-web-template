@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-10-15 16:23:19
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:11:07
- * @FilePath: /vue-web-template/src/utils/form/identityCard.ts
- * @Description: 身份证相关工具函数
+ * @FileDesc: 身份证相关工具函数
  */
 
 /**

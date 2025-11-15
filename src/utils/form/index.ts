@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-10-14 15:32:55
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:11:14
- * @FilePath: /vue-web-template/src/utils/form/index.ts
- * @Description: 表单相关工具函数
+ * @FileDesc: 表单相关工具函数
  */
 
 /** 导出身份证相关工具函数 */

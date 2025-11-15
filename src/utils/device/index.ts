@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-04-21 17:53:06
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:10:53
- * @FilePath: /vue-web-template/src/utils/device/index.ts
- * @Description: 设备相关工具函数
+ * @FileDesc: 设备相关工具函数
  */
 
 /**

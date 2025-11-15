@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-10-14 17:08:19
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:06:54
- * @FilePath: /vue-web-template/src/apis/modules/activity.ts
- * @Description: 本次活动接口模块
+ * @FileDesc: 本次活动接口模块
  */
 
 import axios from "axios"

@@ -1,10 +1,5 @@
 <!--
- @author dyb-dev
- @date 18/10/2024/ 22:10:03
- @lastAuthor dyb-dev
- @lastEditTime 18/10/2024/ 22:10:20
- @filePath /vue-web-template/src/views/[...path].vue
- @description 404 页面
+ * @FileDesc: 404 页面
 -->
 
 <script setup lang="tsx">

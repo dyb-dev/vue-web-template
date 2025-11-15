@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-21 20:20:15
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-11 01:42:29
- * @FilePath: /vue-web-template/src/components/index.ts
- * @Description: 组件模块
+ * @FileDesc: 组件模块
  */
 
 /** 导出 `对话框模块` */

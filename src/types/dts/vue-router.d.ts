@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-10-17 13:48:12
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 18:36:30
- * @FilePath: /vue-web-template/src/types/dts/vue-router.d.ts
- * @Description: Vue Router 扩展接口
+ * @FileDesc: Vue Router 扩展接口
  */
 
 import "vue-router"

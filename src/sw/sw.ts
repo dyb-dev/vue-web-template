@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-04-24 16:44:44
- * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-15 17:30:22
- * @FilePath: /vue-web-template/src/sw/sw.ts
- * @Description: 控制 Service Worker 脚本文件
+ * @FileDesc: 控制 Service Worker 脚本文件
  */
 
 import { CacheableResponsePlugin } from "workbox-cacheable-response"

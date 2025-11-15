@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-10-09 22:15:17
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:11:00
- * @FilePath: /vue-web-template/src/utils/env/index.ts
- * @Description: 环境相关工具函数
+ * @FileDesc: 环境相关工具函数
  */
 
 import { getCurrentUrlQueryValue } from "@/utils"

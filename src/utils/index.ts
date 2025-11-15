@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-02-27 16:07:20
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-11 01:45:03
- * @FilePath: /vue-web-template/src/utils/index.ts
- * @Description: 工具函数模块
+ * @FileDesc: 工具函数模块
  */
 
 /** 导出计算相关工具函数 */

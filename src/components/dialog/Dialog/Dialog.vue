@@ -1,11 +1,6 @@
 <!--
- * @Author: dyb-dev
- * @Date: 2025-11-10 16:09:47
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-11 01:55:51
- * @FilePath: /vue-web-template/src/components/dialog/Dialog/Dialog.vue
- * @Description: 对话框
--->
+ * @FileDesc: 对话框
+ -->
 
 <script setup lang="tsx" generic="Result extends IBaseResult = IDialogResult">
 import { useVModels } from "@vueuse/core"

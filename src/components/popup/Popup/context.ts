@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-11-10 14:42:33
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-11 01:44:00
- * @FilePath: /vue-web-template/src/components/popup/Popup/context.ts
- * @Description: 弹出层上下文
+ * @FileDesc: 弹出层上下文
  */
 
 import { inject, provide } from "vue"

@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-11-08 12:42:52
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-08 12:43:02
- * @FilePath: /vue-web-template/src/hooks/timer/usePolling.ts
- * @Description: 使用轮询器
+ * @FileDesc: 使用轮询器
  */
 
 /** 使用轮询器返回值 */

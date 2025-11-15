@@ -1,11 +1,6 @@
 <!--
- * @Author: dyb-dev
- * @Date: 2024-10-14 00:04:44
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 18:33:28
- * @FilePath: /vue-web-template/src/views/test.vue
- * @Description: 测试页面
--->
+ * @FileDesc: 测试页面
+ -->
 
 <script setup lang="tsx">
 import { useTitle } from "@vueuse/core"

@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-06-01 14:36:15
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:10:44
- * @FilePath: /vue-web-template/src/utils/dateTime/index.ts
- * @Description: 日期时间相关工具函数
+ * @FileDesc: 日期时间相关工具函数
  */
 
 /**

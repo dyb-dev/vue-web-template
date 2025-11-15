@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-04-24 13:25:54
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-10-30 23:23:54
- * @FilePath: /vue-web-template/vite/vite.prod.config.ts
- * @Description: vite生产环境配置
+ * @FileDesc: vite生产环境配置
  */
 
 import { resolve } from "path"

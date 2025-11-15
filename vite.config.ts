@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2023-11-08 15:55:25
- * @LastEditors: Please set LastEditors
- * @LastEditTime: 2025-11-15 13:15:39
- * @FilePath: /vue-web-template/vite.config.ts
- * @Description: vite 配置
+ * @FileDesc: vite 配置
  */
 
 import { resolve } from "path"

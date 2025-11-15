@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-11-10 11:34:10
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-11 01:43:52
- * @FilePath: /vue-web-template/src/components/popup/DemoPopup/index.tsx
- * @Description: Demo 弹出层
+ * @FileDesc: Demo 弹出层
  */
 
 import { showPopup } from "@/components"

@@ -1,11 +1,6 @@
 <!--
- * @Author: dyb-dev
- * @Date: 2025-09-11 03:16:55
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-09-13 18:35:36
- * @FilePath: /vue-web-template/src/views/home/two.vue
- * @Description: two 子路由
--->
+ * @FileDesc: two 子路由
+ -->
 
 <script setup lang="tsx">
 import { Button } from "vant"

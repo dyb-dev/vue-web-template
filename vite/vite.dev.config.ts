@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-04-24 13:25:07
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:13:29
- * @FilePath: /vue-web-template/vite/vite.dev.config.ts
- * @Description: vite开发环境配置
+ * @FileDesc: vite开发环境配置
  */
 
 import { isIgnoreWatchFile } from "./utils"

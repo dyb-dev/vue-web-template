@@ -1,11 +1,6 @@
 <!--
- * @Author: dyb-dev
- * @Date: 2023-11-08 15:55:25
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-01 11:35:01
- * @FilePath: /vue-web-template/src/App.vue
- * @Description: App根组件
--->
+ * @FileDesc: App根组件
+ -->
 
 <script setup lang="tsx">
 import { ConfigProvider } from "vant"

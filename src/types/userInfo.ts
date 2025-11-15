@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-10-15 17:29:18
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:10:08
- * @FilePath: /vue-web-template/src/types/userInfo.ts
- * @Description: 用户信息类型模块
+ * @FileDesc: 用户信息类型模块
  */
 
 /** 性别类型枚举 */

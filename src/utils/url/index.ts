@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-06-28 14:19:02
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:52:02
- * @FilePath: /vue-web-template/src/utils/url/index.ts
- * @Description: url相关工具函数
+ * @FileDesc: url相关工具函数
  */
 
 import queryString from "query-string"

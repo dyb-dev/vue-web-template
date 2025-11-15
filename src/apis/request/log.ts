@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-21 20:00:04
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:07:49
- * @FilePath: /vue-web-template/src/apis/request/log.ts
- * @Description: 请求日志模块
+ * @FileDesc: 请求日志模块
  */
 
 import { isAbsoluteUrl, isDevEnv, isEnableDebug, trimUrlSlashes } from "@/utils"

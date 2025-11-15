@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-03-15 00:48:42
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:09:25
- * @FilePath: /vue-web-template/src/stores/index.ts
- * @Description: store模块
+ * @FileDesc: store模块
  */
 
 export * from "./activity"

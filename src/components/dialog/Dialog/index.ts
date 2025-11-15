@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-11-10 15:20:34
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-11 01:42:48
- * @FilePath: /vue-web-template/src/components/dialog/Dialog/index.ts
- * @Description: 对话框
+ * @FileDesc: 对话框
  */
 
 /** 导出 `对话框` */

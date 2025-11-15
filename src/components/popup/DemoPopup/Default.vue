@@ -1,11 +1,6 @@
 <!--
- * @Author: dyb-dev
- * @Date: 2025-11-10 14:49:45
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-11 01:43:45
- * @FilePath: /vue-web-template/src/components/popup/DemoPopup/Default.vue
- * @Description: 默认插槽
--->
+ * @FileDesc: 默认插槽
+ -->
 
 <script setup lang="tsx">
 import { Button } from "vant"

@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-11-10 11:31:23
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-11 01:41:05
- * @FilePath: /vue-web-template/src/utils/component/index.tsx
- * @Description: 组件相关工具函数
+ * @FileDesc: 组件相关工具函数
  */
 
 import { createApp, defineComponent, onMounted, ref } from "vue"

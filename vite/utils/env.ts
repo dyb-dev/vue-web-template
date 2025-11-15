@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-21 16:31:22
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:14:54
- * @FilePath: /vue-web-template/vite/utils/env.ts
- * @Description: Vite 环境相关工具模块
+ * @FileDesc: Vite 环境相关工具模块
  */
 
 import { networkInterfaces } from "os"

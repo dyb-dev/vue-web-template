@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-02-21 19:58:19
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:06:38
- * @FilePath: /vue-web-template/src/apis/interceptors/response.ts
- * @Description: 响应拦截器模块
+ * @FileDesc: 响应拦截器模块
  */
 
 import axios from "axios"

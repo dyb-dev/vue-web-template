@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-10-15 15:12:03
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:13:14
- * @FilePath: /vue-web-template/src/utils/userInfo/index.ts
- * @Description: 用户信息相关工具函数
+ * @FileDesc: 用户信息相关工具函数
  */
 
 import { CERTIFICATE_CONFIG_LIST, GENDER_CONFIG_LIST } from "@/constants"

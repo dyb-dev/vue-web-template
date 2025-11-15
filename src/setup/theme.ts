@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-07-28 13:03:24
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-07-28 13:19:48
- * @FilePath: /vue-web-template/src/setup/theme.ts
- * @Description: 初始化主题
+ * @FileDesc: 初始化主题
  */
 
 import { ETheme, useThemeStore } from "@/stores"

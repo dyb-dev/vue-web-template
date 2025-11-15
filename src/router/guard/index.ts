@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-07-23 17:27:15
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:08:25
- * @FilePath: /vue-web-template/src/router/guard/index.ts
- * @Description: 路由守卫模块
+ * @FileDesc: 路由守卫模块
  */
 
 import { setupLoginGuard } from "./login"

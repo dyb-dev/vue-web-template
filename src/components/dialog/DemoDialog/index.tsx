@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-11-10 16:22:05
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-11 01:43:24
- * @FilePath: /vue-web-template/src/components/dialog/DemoDialog/index.tsx
- * @Description: Demo 对话框
+ * @FileDesc: Demo 对话框
  */
 
 import { showDialog } from "@/components"

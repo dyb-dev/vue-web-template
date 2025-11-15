@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-11-08 12:40:30
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-08 12:40:40
- * @FilePath: /vue-web-template/src/hooks/async/useAsyncTask.ts
- * @Description: 使用异步任务执行器
+ * @FileDesc: 使用异步任务执行器
  */
 
 import { showToast } from "vant"

@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-10-16 22:13:43
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:07:56
- * @FilePath: /vue-web-template/src/constants/userInfo.ts
- * @Description: 用户信息常量模块
+ * @FileDesc: 用户信息常量模块
  */
 
 import { ECertificatesType, EGenderType } from "@/types"

@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-10-14 15:02:42
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:09:01
- * @FilePath: /vue-web-template/src/stores/activity.ts
- * @Description: 活动状态管理
+ * @FileDesc: 活动状态管理
  */
 
 import { defineStore } from "pinia"

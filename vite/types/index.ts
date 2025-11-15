@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-08-02 22:55:14
- * @LastEditors: dyb-dev
- * @LastEditTime: 2024-10-14 13:46:44
- * @FilePath: /vue-web-template/vite/types/index.ts
- * @Description: node 环境类型模块
+ * @FileDesc: node 环境类型模块
  */
 
 /** 设置vite环境配置函数参数 */

@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2023-11-08 15:55:25
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:09:18
- * @FilePath: /vue-web-template/src/stores/componentCache.ts
- * @Description: 组件缓存状态管理
+ * @FileDesc: 组件缓存状态管理
  */
 
 import { defineStore } from "pinia"

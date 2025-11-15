@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-08-02 22:22:41
- * @LastEditors: dyb-dev
- * @LastEditTime: 2024-08-30 16:33:04
- * @FilePath: /vue-web-template/tsconfig.node.json
- * @Description: node环境ts配置
+ * @FileDesc: node环境ts配置
  */
 
 {

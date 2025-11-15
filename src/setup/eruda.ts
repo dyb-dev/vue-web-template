@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-07-28 13:03:04
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-01 11:34:12
- * @FilePath: /vue-web-template/src/setup/eruda.ts
- * @Description: 初始化 eruda 调试器
+ * @FileDesc: 初始化 eruda 调试器
  */
 
 import { isEnableDebug } from "@/utils"

@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-10-17 12:36:04
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-02-21 17:19:12
- * @FilePath: /vue-web-template/src/types/dts/api.d.ts
- * @Description: api 类型声明补充文件
+ * @FileDesc: api 类型声明补充文件
  */
 
 import type { AxiosResponse } from "axios"

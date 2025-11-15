@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2025-11-10 14:30:11
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-11 01:44:05
- * @FilePath: /vue-web-template/src/components/popup/Popup/index.ts
- * @Description: 弹出层
+ * @FileDesc: 弹出层
  */
 
 /** 导出 `弹出层` */

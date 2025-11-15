@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-04-24 16:44:39
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:09:58
- * @FilePath: /vue-web-template/src/sw/index.ts
- * @Description: Service Worker 模块
+ * @FileDesc: Service Worker 模块
  */
 
 /**

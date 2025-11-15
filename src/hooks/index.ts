@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-04-21 15:47:17
- * @LastEditors: dyb-dev
- * @LastEditTime: 2025-11-08 12:40:07
- * @FilePath: /vue-web-template/src/hooks/index.ts
- * @Description: hook模块
+ * @FileDesc: hook模块
  */
 
 /** 导出异步任务相关hook */

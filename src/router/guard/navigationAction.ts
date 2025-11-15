@@ -1,10 +1,5 @@
 /*
- * @Author: dyb-dev
- * @Date: 2024-07-23 21:08:18
- * @LastEditors: v_zhgtzhong
- * @LastEditTime: 2025-08-01 00:08:51
- * @FilePath: /vue-web-template/src/router/guard/navigationAction.ts
- * @Description: 路由导航动作守卫模块
+ * @FileDesc: 路由导航动作守卫模块
  */
 
 import type { Router } from "vue-router"

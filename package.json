@@ -1,6 +1,6 @@
 {
     "name": "vue-web-template",
-    "version": "1.5.3",
+    "version": "1.5.4",
     "description": "基于`vue3全家桶`搭建的Web移动端模板",
     "author": "dyb-dev",
     "license": "MIT",
@@ -30,13 +30,14 @@
         "directory": "https://github.com/dyb-dev/vue-web-template"
     },
     "devDependencies": {
-        "@dyb-dev/eslint-config": "^1.0.0",
+        "@dyb-dev/eslint-config": "^1.1.1",
         "@dyb-dev/prettier-config": "^0.0.5",
         "@dyb-dev/project-cli": "^0.0.10",
         "@dyb-dev/stylelint-config": "^0.0.8",
         "@dyb-dev/ts-config": "^0.1.4",
         "@mistjs/vite-plugin-px2viewport": "^0.0.11",
         "@types/file-saver": "^2.0.7",
+        "@unocss/eslint-config": "^66.5.10",
         "@vitejs/plugin-legacy": "^5.4.2",
         "@vitejs/plugin-vue": "^5.1.4",
         "@vitejs/plugin-vue-jsx": "^5.1.1",

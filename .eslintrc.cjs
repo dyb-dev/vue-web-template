@@ -3,5 +3,13 @@
  */
 
 module.exports = {
-    extends: ["@dyb-dev/eslint-config/vue"]
+    extends: ["@dyb-dev/eslint-config/vue"],
+    overrides: [
+        // #region CODE: unocss 配置
+        {
+            files: ["**/*.vue", "**/*.jsx", "**/*.tsx"],
+            extends: ["@unocss"]
+        }
+        // #endregion
+    ]
 }

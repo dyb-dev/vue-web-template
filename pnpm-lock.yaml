@@ -58,8 +58,8 @@ importers:
         version: 4.1.12
     devDependencies:
       '@dyb-dev/eslint-config':
-        specifier: ^1.0.0
-        version: 1.0.0(eslint@8.57.1)(typescript@5.6.3)
+        specifier: ^1.1.1
+        version: 1.1.1(eslint@8.57.1)(typescript@5.6.3)
       '@dyb-dev/prettier-config':
         specifier: ^0.0.5
         version: 0.0.5(prettier@3.4.1)
@@ -78,6 +78,9 @@ importers:
       '@types/file-saver':
         specifier: ^2.0.7
         version: 2.0.7
+      '@unocss/eslint-config':
+        specifier: ^66.5.10
+        version: 66.5.10(eslint@8.57.1)(typescript@5.6.3)
       '@vitejs/plugin-legacy':
         specifier: ^5.4.2
         version: 5.4.3(terser@5.36.0)(vite@5.4.11(@types/node@24.10.1)(sass@1.81.0)(sugarss@2.0.0)(terser@5.36.0))
@@ -845,8 +848,8 @@ packages:
   '@dual-bundle/import-meta-resolve@4.2.1':
     resolution: {integrity: sha512-id+7YRUgoUX6CgV0DtuhirQWodeeA7Lf4i2x71JS/vtA5pRb/hIGWlw+G6MeXvsM+MXrz0VAydTGElX1rAfgPg==}
 
-  '@dyb-dev/eslint-config@1.0.0':
-    resolution: {integrity: sha512-bB7q17zRkT+T4G35OpWLzBzwWSbzvkW11FLxT7TQmLtVT5sbE1vyeZ6posvSBr0YuKmbvTM7SyiAxf4Emsn0Jw==}
+  '@dyb-dev/eslint-config@1.1.1':
+    resolution: {integrity: sha512-mr1a6RHPt5wRw3YIXobBgACDvKPtpEdy8Ps/tV8gK1Qo/h+dO0RN32JT1re6H7p0OM+8tfh4AYoBRrTfKDPeWg==}
     engines: {node: '>=18.0.0', pnpm: '>=8.15.5 <10.0.0'}
     peerDependencies:
       eslint: ^8.0.0
@@ -1138,6 +1141,9 @@ packages:
 
   '@napi-rs/wasm-runtime@0.2.12':
     resolution: {integrity: sha512-ZVWUcfwY4E/yPitQJl481FjFo3K22D6qF0DuFH6Y/nbnE11GY5uguDxZMGXPQ8WQ0128MXQD7TnfHyK4oWoIJQ==}
+
+  '@next/eslint-plugin-next@15.5.9':
+    resolution: {integrity: sha512-kUzXx0iFiXw27cQAViE1yKWnz/nF8JzRmwgMRTMh8qMY90crNsdXJRh2e+R0vBpFR3kk1yvAR7wev7+fCCb79Q==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -3036,6 +3042,10 @@ packages:
   fast-glob@2.2.7:
     resolution: {integrity: sha512-g1KuQwHOZAmOZMuBtHdxDtju+T2RT8jgCC9aANsbpdiDDTSnjgfuVsIBNKbUeJI3oKMRExcfNDtJl4OhbffMsw==}
     engines: {node: '>=4.0.0'}
+
+  fast-glob@3.3.1:
+    resolution: {integrity: sha512-kNFPyjhh5cKjrUltxs+wFx+ZkbRaxxmZ+X0ZU31SOsxCEtP9VPgtq2teZw1DebupL5GmDaNQ6yKMMVcM41iqDg==}
+    engines: {node: '>=8.6.0'}
 
   fast-glob@3.3.2:
     resolution: {integrity: sha512-oX2ruAFQwf/Orj8m737Y5adxDQO0LAB7/S5MnxCdTNDd4p6BsyIVsv9JQsATbTSq8KHRpLwIHbVlUNatxd+1Ow==}
@@ -6806,11 +6816,11 @@ snapshots:
 
   '@dual-bundle/import-meta-resolve@4.2.1': {}
 
-  '@dyb-dev/eslint-config@1.0.0(eslint@8.57.1)(typescript@5.6.3)':
+  '@dyb-dev/eslint-config@1.1.1(eslint@8.57.1)(typescript@5.6.3)':
     dependencies:
+      '@next/eslint-plugin-next': 15.5.9
       '@typescript-eslint/eslint-plugin': 6.21.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(typescript@5.6.3)
       '@typescript-eslint/parser': 6.21.0(eslint@8.57.1)(typescript@5.6.3)
-      '@unocss/eslint-config': 66.5.10(eslint@8.57.1)(typescript@5.6.3)
       eslint: 8.57.1
       eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0)(eslint@8.57.1)
       eslint-plugin-import: 2.32.0(@typescript-eslint/parser@6.21.0(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-typescript@3.10.1)(eslint@8.57.1)
@@ -7083,6 +7093,10 @@ snapshots:
       '@emnapi/runtime': 1.7.1
       '@tybys/wasm-util': 0.10.1
     optional: true
+
+  '@next/eslint-plugin-next@15.5.9':
+    dependencies:
+      fast-glob: 3.3.1
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -9365,6 +9379,14 @@ snapshots:
       micromatch: 3.1.10
     transitivePeerDependencies:
       - supports-color
+
+  fast-glob@3.3.1:
+    dependencies:
+      '@nodelib/fs.stat': 2.0.5
+      '@nodelib/fs.walk': 1.2.8
+      glob-parent: 5.1.2
+      merge2: 1.4.1
+      micromatch: 4.0.8
 
   fast-glob@3.3.2:
     dependencies:

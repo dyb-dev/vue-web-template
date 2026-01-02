@@ -21,11 +21,15 @@ public
 src/assets/
 unpackage
 types
+LICENSE
 .*
 *-lock.*
 *.json
 *.yaml
 *.md
+*.tsx
 *.ts
 *.d.ts
 *.*js
+*.html
+*.ico

@@ -52,7 +52,7 @@ export const useUserInfoStore = defineStore("UserInfoStore", () => {
      * @param {ILoginApiParams} params 登录参数
      * @returns {*}  {Promise<AxiosResponse<ILoginApiResultData>>}
      */
-    const login = async(params: ILoginApiParams): Promise<AxiosResponse<ILoginApiResultData>> => {
+    const login = async (params: ILoginApiParams): Promise<AxiosResponse<ILoginApiResultData>> => {
 
         const _loginApiResult = await loginApi(params, {
             testResult: {
@@ -90,7 +90,7 @@ export const useUserInfoStore = defineStore("UserInfoStore", () => {
      * @date 19/02/2025/  20:36:39
      * @returns {*}  {Promise<boolean>}
      */
-    const checkLogin = async(): Promise<boolean> => {
+    const checkLogin = async (): Promise<boolean> => {
 
         if (userInfoStoreState.isLogin) {
 
@@ -119,7 +119,7 @@ export const useUserInfoStore = defineStore("UserInfoStore", () => {
      * @date 19/02/2025/  20:38:20
      * @returns {*}  {Promise<AxiosResponse>}
      */
-    const logout = async(): Promise<AxiosResponse> => {
+    const logout = async (): Promise<AxiosResponse> => {
 
         const _logoutApiResult = await logoutApi({
             testResult: {

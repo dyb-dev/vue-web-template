@@ -1,6 +1,6 @@
 {
     "name": "vue-web-template",
-    "version": "1.5.4",
+    "version": "1.6.0",
     "description": "基于`vue3全家桶`搭建的Web移动端模板",
     "author": "dyb-dev",
     "license": "MIT",
@@ -14,7 +14,8 @@
         "build-only": "vite build",
         "preview": "vite preview",
         "ts-check": "vue-tsc --build --force",
-        "release": "project-cli release"
+        "release": "project-cli release",
+        "format": "prettier --write . && eslint --fix . && stylelint --fix . --allow-empty-input"
     },
     "engines": {
         "node": ">=18.0.0",
@@ -44,6 +45,7 @@
         "autoprefixer": "^10.4.20",
         "eslint": "^8.57.1",
         "husky": "^9.1.6",
+        "lint-staged": "^16.2.7",
         "portfinder-sync": "^0.0.2",
         "postcss-mobile-forever": "^4.2.1",
         "prettier": "^3.3.3",
@@ -86,5 +88,12 @@
         "vue": "^3.5.12",
         "vue-router": "^4.4.5",
         "zod": "^4.1.12"
+    },
+    "lint-staged": {
+        "*": [
+            "prettier --write",
+            "eslint --fix",
+            "stylelint --fix --allow-empty-input"
+        ]
     }
 }

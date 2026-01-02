@@ -8,7 +8,7 @@
  * @author dyb-dev
  * @date 24/04/2024/  10:54:36
  */
-export const setupServiceWorker = async() => {
+export const setupServiceWorker = async () => {
 
     try {
 
@@ -18,12 +18,12 @@ export const setupServiceWorker = async() => {
         registerSW({
             // 立即注册
             immediate: true,
-            onRegisteredSW() {
+            onRegisteredSW () {
 
                 console.log("Service Worker 注册成功")
 
             },
-            onRegisterError() {
+            onRegisterError () {
 
                 console.error("Service Worker 注册失败")
 

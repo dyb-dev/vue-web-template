@@ -103,7 +103,7 @@ const { loadStatus, run } = useAsyncTask()
  * @param newResult 新的结果对象
  * @returns 是否允许关闭
  */
-const beforeClose = async(newResult = { actionType: "close" } as Result): Promise<boolean> => {
+const beforeClose = async (newResult = { actionType: "close" } as Result): Promise<boolean> => {
 
     if (loadStatus.value === "loading") {
 
@@ -125,7 +125,7 @@ const beforeClose = async(newResult = { actionType: "close" } as Result): Promis
  *
  * @param newResult 新的结果对象
  */
-const close = async(newResult?: Result): Promise<void> => {
+const close = async (newResult?: Result): Promise<void> => {
 
     /** 是否关闭 */
     const isClose = await beforeClose(newResult)

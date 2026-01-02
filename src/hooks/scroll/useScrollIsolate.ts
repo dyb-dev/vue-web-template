@@ -29,7 +29,7 @@ export const useScrollIsolate = (
     let _targetElementList: HTMLElement[] = []
 
     /** HOOKS: 挂载钩子 */
-    onMounted(async() => {
+    onMounted(async () => {
 
         await nextTick()
         // 获取目标元素列表

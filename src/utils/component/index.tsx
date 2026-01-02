@@ -154,7 +154,7 @@ export const mountComponent = <
 
         const Wrapper = defineComponent({
             name: "Wrapper",
-            setup() {
+            setup () {
 
                 /** REF: 是否显示 */
                 const visible = ref(false)

@@ -85,6 +85,15 @@ const isActive = ref(false)
         transform-style: preserve-3d;
         animation: rotate linear 20s infinite;
 
+        @keyframes rotate {
+            from {
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+            to {
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+
         /* 大正方体样式 */
         &__max {
             position: absolute;
@@ -173,15 +182,6 @@ const isActive = ref(false)
 
         &--active .cube__box__max__bottom {
             transform: rotateX(-90deg) translateZ(200px);
-        }
-
-        @keyframes rotate {
-            from {
-                transform: rotateX(0deg) rotateY(0deg);
-            }
-            to {
-                transform: rotateX(360deg) rotateY(360deg);
-            }
         }
     }
 }

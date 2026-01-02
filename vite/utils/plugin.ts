@@ -46,7 +46,7 @@ export const ViteHtmlFileType = (fileType: "html" | "aspx" | "php", outDir: stri
             // 其他插件之后执行该插件
             enforce: "post",
             // 插件修改html内容钩子（vite独有）
-            transformIndexHtml(html) {
+            transformIndexHtml (html) {
 
                 let prefix = ""
                 switch (fileType) {
@@ -68,7 +68,7 @@ export const ViteHtmlFileType = (fileType: "html" | "aspx" | "php", outDir: stri
 
             },
             // 关闭构建钩子（通用）
-            closeBundle() {
+            closeBundle () {
 
                 // 延时是由于同步获取index.html不存在，可能被其他的插件给影响到了
                 setTimeout(() => {

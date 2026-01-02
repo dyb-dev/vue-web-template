@@ -54,7 +54,7 @@ const password = ref("")
 const { login } = useUserInfoStore()
 
 /** EVENT: 点击登录按钮 */
-const onClickLoginButton = async() => {
+const onClickLoginButton = async () => {
 
     // 校验表单是否通过
     if (!isDevEnv() && !validateForm()) {

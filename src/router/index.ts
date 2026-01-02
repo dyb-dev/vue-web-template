@@ -24,7 +24,7 @@ export const router = createRouter({
             redirect: VITE_HOME_ROUTE
         }
     ],
-    scrollBehavior() {
+    scrollBehavior () {
 
         // 禁止页面跳转时滚动位置自动重置，手动在 `App.vue` 中设置滚动位置，避免页面进行过渡动画时异常
         return false

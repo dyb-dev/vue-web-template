@@ -32,8 +32,13 @@
     /** 基础字体族 */
     --base-font: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Segoe UI, Arial, Roboto, "PingFang SC", "miui",
         "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+    /* 基础字体大小 */
+    --base-font-size: 10px;
     /** 价格字体族 */
     --price-font: Avenir-Heavy, PingFang SC, Helvetica Neue, Arial, sans-serif;
+
+    /* 间距变量 */
+    --spacing: 1px;
 
     /* IOS 顶部和底部 安全区域 支持IOS 11.2 及以上的系统版本 */
     --safe-area-top-height: env(safe-area-inset-top);

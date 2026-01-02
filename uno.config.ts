@@ -31,5 +31,7 @@ export default defineConfig({
         "flex-center": "flex justify-center items-center",
         "flex-x-center": "flex justify-center",
         "flex-y-center": "flex items-center"
-    }
+    },
+    // 自定义规则
+    rules: [[/^text-(\d+(?:\.\d+)?)$/, ([, d]) => ({ "font-size": `calc(var(--base-font-size) * ${d})` })]]
 })

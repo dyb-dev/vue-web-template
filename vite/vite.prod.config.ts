@@ -2,10 +2,12 @@
  * @FileDesc: vite生产环境配置
  */
 
-import { resolve } from "path"
+import { resolve } from "node:path"
+import { constants } from "node:zlib"
 
 import ViteLegacy from "@vitejs/plugin-legacy"
 import RollupCopy from "rollup-plugin-copy"
+import { compression, defineAlgorithm } from "vite-plugin-compression2"
 
 import { ViteHtmlFileType, assetFileNames, getCopyFileList, manualChunks } from "./utils"
 
@@ -51,6 +53,28 @@ export const setupProdConfig = (param: ISetupEnvConfigParam): UserConfig => {
                     // 为现代浏览器构建生成一个单独的polyfill块（目标是支持广泛可用特性的浏览器）
                     modernPolyfills: true
                 }) as unknown as PluginOption),
+            // 压缩资源插件
+            compression({
+                // 文件大小压缩阈值
+                threshold: 1024,
+                // 算法
+                algorithms: [
+                    defineAlgorithm("gzip", {
+                        // 压缩级别
+                        level: 9
+                    }),
+                    defineAlgorithm("brotliCompress", {
+                        params: {
+                            // 压缩级别
+                            [constants.BROTLI_PARAM_QUALITY]: 11,
+                            // 滑动窗口大小
+                            [constants.BROTLI_PARAM_LGWIN]: 24,
+                            // 压缩模式
+                            [constants.BROTLI_PARAM_MODE]: constants.BROTLI_MODE_TEXT
+                        }
+                    })
+                ]
+            }),
             // 复制文件或目录的插件
             RollupCopy({
                 targets: getCopyFileList(VITE_PUBLIC_ASSETS_DIR, VITE_OUT_DIR, VITE_OUT_ASSETS_DIR),

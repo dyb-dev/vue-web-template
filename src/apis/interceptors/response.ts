@@ -4,6 +4,8 @@
 
 import axios from "axios"
 
+import { EApiResultCode } from "@/types"
+
 import type { AxiosResponse } from "axios"
 
 /**
@@ -16,35 +18,23 @@ export const setupResponseInterceptor = () => {
 
     axios.interceptors.response.use(
         // 2xx 范围内的状态码都会触发该函数
-        response => {
-
-            response.success = true
-            response.message = response.statusText || "请求成功"
-            return response
-
-        },
+        response => response,
         // 超出 2xx 范围的状态码都会触发该函数
         error => {
 
-            // 响应信息
-            const _response = error.response as AxiosResponse
+            const errorResponse: AxiosResponse<IApiResult> = error.response ?? { data: {} }
 
-            // 处理有响应的情况
-            if (_response) {
+            if (!Number.isSafeInteger(errorResponse.data.code)) {
 
-                _response.success = false
-                _response.message = _response.statusText || "请求失败"
-
-            }
-            // 处理没有响应的情况（如网络错误）
-            else {
-
-                error.success = false
-                error.message = "网络错误或无响应"
+                errorResponse.data = {
+                    success: false,
+                    code: errorResponse.status || EApiResultCode.INTERNAL_SERVER_ERROR,
+                    message: errorResponse.statusText || "网络错误或无响应"
+                } as IApiResult
 
             }
 
-            return Promise.reject(_response || error)
+            return Promise.reject(errorResponse)
 
         }
     )

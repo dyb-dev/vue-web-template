@@ -4,8 +4,6 @@
 
 import { sendRequest } from "../request"
 
-import type { AxiosResponse } from "axios"
-
 /** 登录 参数 */
 export interface ILoginApiParams {
     /** 用户手机号 */
@@ -29,12 +27,12 @@ export interface ILoginApiResultData {
  * @date 21/02/2025/  14:08:17
  * @param {ILoginApiParams} params 参数
  * @param {TModifyProperties<ITestRequestConfig<ILoginApiResultData>, "test">} [testRequestConfig] 测试请求配置
- * @returns {*}  {Promise<AxiosResponse<ILoginApiResultData>>} 结果数据
+ * @returns {*}  {Promise<IApiResult<ILoginApiResultData>>} 结果数据
  */
 export const loginApi = (
     params: ILoginApiParams,
     testRequestConfig?: TModifyProperties<ITestRequestConfig<ILoginApiResultData>, "test">
-): Promise<AxiosResponse<ILoginApiResultData>> => {
+): Promise<IApiResult<ILoginApiResultData>> => {
 
     // TODO: 接口地址修改
     return sendRequest({
@@ -51,9 +49,9 @@ export const loginApi = (
  * @author dyb-dev
  * @date 21/02/2025/  14:08:51
  * @param {TModifyProperties<ITestRequestConfig, "test">} [testRequestConfig] 测试请求配置
- * @returns {*}  {Promise<AxiosResponse>} 结果数据
+ * @returns {*}  {Promise<IApiResult>} 结果数据
  */
-export const checkLoginApi = (testRequestConfig?: TModifyProperties<ITestRequestConfig, "test">): Promise<AxiosResponse> => {
+export const checkLoginApi = (testRequestConfig?: TModifyProperties<ITestRequestConfig, "test">): Promise<IApiResult> => {
 
     // TODO: 接口地址修改
     return sendRequest({
@@ -69,9 +67,9 @@ export const checkLoginApi = (testRequestConfig?: TModifyProperties<ITestRequest
  * @author dyb-dev
  * @date 21/02/2025/  14:09:06
  * @param {TModifyProperties<ITestRequestConfig, "test">} [testRequestConfig] 测试请求配置
- * @returns {*}  {Promise<AxiosResponse>} 结果数据
+ * @returns {*}  {Promise<IApiResult>} 结果数据
  */
-export const logoutApi = (testRequestConfig?: TModifyProperties<ITestRequestConfig, "test">): Promise<AxiosResponse> => {
+export const logoutApi = (testRequestConfig?: TModifyProperties<ITestRequestConfig, "test">): Promise<IApiResult> => {
 
     // TODO: 接口地址修改
     return sendRequest({

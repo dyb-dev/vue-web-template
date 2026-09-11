@@ -2,7 +2,7 @@
  * @FileDesc: vite 配置
  */
 
-import { resolve } from "path"
+import { resolve } from "node:path"
 
 import { px2viewport as VitePx2viewport } from "@mistjs/vite-plugin-px2viewport"
 import ViteVue from "@vitejs/plugin-vue"

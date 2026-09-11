@@ -7,8 +7,9 @@ import { reactive } from "vue"
 
 import { checkLoginApi, loginApi, logoutApi } from "@/apis"
 
+import { EApiResultCode } from "@/types"
+
 import type { ILoginApiParams, ILoginApiResultData } from "@/apis"
-import type { AxiosResponse } from "axios"
 
 import { store } from "."
 
@@ -50,13 +51,14 @@ export const useUserInfoStore = defineStore("UserInfoStore", () => {
      * @author dyb-dev
      * @date 19/02/2025/  20:38:42
      * @param {ILoginApiParams} params 登录参数
-     * @returns {*}  {Promise<AxiosResponse<ILoginApiResultData>>}
+     * @returns {*}  {Promise<IApiResult<ILoginApiResultData>>}
      */
-    const login = async (params: ILoginApiParams): Promise<AxiosResponse<ILoginApiResultData>> => {
+    const login = async (params: ILoginApiParams): Promise<IApiResult<ILoginApiResultData>> => {
 
         const _loginApiResult = await loginApi(params, {
             testResult: {
                 success: true,
+                code: EApiResultCode.Success,
                 message: "登录成功",
                 data: {
                     nickName: "123456",
@@ -101,6 +103,7 @@ export const useUserInfoStore = defineStore("UserInfoStore", () => {
         const _checkLoginApiResult = await checkLoginApi({
             testResult: {
                 success: true,
+                code: EApiResultCode.Success,
                 message: "检查登录成功"
             }
         })
@@ -117,13 +120,14 @@ export const useUserInfoStore = defineStore("UserInfoStore", () => {
      *
      * @author dyb-dev
      * @date 19/02/2025/  20:38:20
-     * @returns {*}  {Promise<AxiosResponse>}
+     * @returns {*}  {Promise<IApiResult>}
      */
-    const logout = async (): Promise<AxiosResponse> => {
+    const logout = async (): Promise<IApiResult> => {
 
         const _logoutApiResult = await logoutApi({
             testResult: {
                 success: true,
+                code: EApiResultCode.Success,
                 message: "退出登录成功"
             }
         })

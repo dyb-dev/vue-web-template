@@ -11,6 +11,8 @@ import { useRoute } from "vue-router"
 import { getIdApi, getUserInfoApi } from "@/apis"
 import { router } from "@/router"
 
+import { EApiResultCode } from "@/types"
+
 /** 定义页面路由信息 */
 definePage({
     meta: {
@@ -42,6 +44,7 @@ const onClickGetUserInfoButton = async () => {
     const _result = await getUserInfoApi({
         testResult: {
             success: true,
+            code: EApiResultCode.Success,
             message: "success",
             data: {
                 body: "success",
@@ -76,6 +79,7 @@ const onClickGetIdButton = async () => {
         {
             testResult: {
                 success: true,
+                code: EApiResultCode.Success,
                 message: "success",
                 data: {
                     id: 1

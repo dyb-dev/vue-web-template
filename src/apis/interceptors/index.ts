@@ -2,6 +2,7 @@
  * @FileDesc: Api 拦截器模块
  */
 
+import { setupRequestInterceptor } from "./request"
 import { setupResponseInterceptor } from "./response"
 
 /**
@@ -12,6 +13,9 @@ import { setupResponseInterceptor } from "./response"
  */
 export const setupApiInterceptor = () => {
 
+    // 设置请求拦截器
+    setupRequestInterceptor()
+    // 设置响应拦截器
     setupResponseInterceptor()
 
 }
